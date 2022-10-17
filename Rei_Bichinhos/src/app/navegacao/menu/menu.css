@@ -15,14 +15,14 @@
 /* NavBar */
 .bg-light1 {
 
-    background-color: #A4D984;
+    background-color: #DCDCDC;
     /* background-color: #FD814E; */
 /* #A4G984 */
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #255806;
-    /* font-weight: bold; */
+    color: #dd5303;
+    font-weight: bold;
     font-size: 1.0rem;
 }
 
