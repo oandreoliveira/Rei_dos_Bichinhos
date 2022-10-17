@@ -1,0 +1,20 @@
+
+.footer {
+    height: 50px;
+    text-align: center;
+}
+
+.bg-light2 {
+    background-color: #255806;
+    /* background-color: #1D3557; */
+}
+
+a{
+    color: #141619;
+    text-decoration: solid;
+}
+
+.espaco {
+    padding-bottom: 20px;
+
+}

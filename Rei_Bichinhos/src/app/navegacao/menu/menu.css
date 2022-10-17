@@ -1,0 +1,34 @@
+/* .main-container {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    background-color: transparent;
+
+
+} */
+
+
+/* NavBar */
+.bg-light1 {
+
+    background-color: #A4D984;
+    /* background-color: #FD814E; */
+/* #A4G984 */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #255806;
+    /* font-weight: bold; */
+    font-size: 1.0rem;
+}
+
+
+#navbarResponsive {
+    display: flex;
+    justify-content: flex-end;
+
+}
