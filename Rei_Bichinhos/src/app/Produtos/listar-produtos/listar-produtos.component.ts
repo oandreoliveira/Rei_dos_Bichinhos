@@ -3,13 +3,13 @@ import { Categoria } from 'src/app/Interface/Categoria';
 import { Produto } from 'src/app/Interface/Produto';
 import { ProdutosService } from 'src/app/Service/produtos.service';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.css']
+  selector: 'app-listar-produtos',
+  templateUrl: './listar-produtos.html',
+  styleUrls: ['./listar-produtos.css'
+  ]
 })
-export class HomeComponent implements OnInit {
+export class ListarProdutosComponent implements OnInit {
 
   public paginaAtual = 1;
   onActivate(event: Event) {
@@ -41,5 +41,3 @@ export class HomeComponent implements OnInit {
   }
 
 }
-
-

@@ -7,6 +7,10 @@ import { MenuComponent } from './navegacao/menu/menu.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { FooterComponent } from './navegacao/footer/footer.component';
 import { AreaAdministrativaComponent } from './navegacao/area-administrativa/area-administrativa.component';
+import { ListarProdutosComponent } from './Produtos/listar-produtos/listar-produtos.component';
+import { ListarCategoriasComponent } from './Categorias/listar-categorias/listar-categorias.component';
+import { CategoriasService } from './Service/categorias.service';
+import { ProdutosService } from './Service/produtos.service';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,18 @@ import { AreaAdministrativaComponent } from './navegacao/area-administrativa/are
     MenuComponent,
     HomeComponent,
     FooterComponent,
-    AreaAdministrativaComponent
+    AreaAdministrativaComponent,
+    ListarProdutosComponent,
+    ListarCategoriasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CategoriasService,
+    ProdutosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
