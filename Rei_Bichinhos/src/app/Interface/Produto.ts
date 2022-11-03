@@ -4,13 +4,13 @@ export interface Produto {
 
     id: number;
     nome: string;
-    valor: string;
+    valor: number;
     promocao: boolean;
-    valorPromo: string;
+    valorPromo: number;
     imagem: string;
-    alturaCm: string;
-    larguraCm: string;
-    pesoGr: string;
+    alturaCm: number;
+    larguraCm: number;
+    pesoGr: number;
     isAtivo: boolean;
     categorias: Categoria;
 

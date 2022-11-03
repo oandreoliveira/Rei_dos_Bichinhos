@@ -11,14 +11,14 @@ import { ProdutosService } from 'src/app/Service/produtos.service';
 })
 export class ListarProdutosComponent implements OnInit {
 
-  public paginaAtual = 1;
-  onActivate(event: Event) {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
+  // public paginaAtual = 1;
+  // onActivate(event: Event) {
+  //   window.scroll({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: 'smooth'
+  //   });
+  // }
   constructor(private produtosService: ProdutosService) { }
   public "produtos": Produto[];
   public "categorias": Categoria[]; // ver se é preciso *******

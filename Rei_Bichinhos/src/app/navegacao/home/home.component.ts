@@ -35,6 +35,18 @@ export class HomeComponent implements OnInit {
 
   }
 
+  public pesquisar(event: Event) {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.produtos = this.produtos.filter(
+      produtos => {
+        return produtos.nome.toLowerCase().includes(value.toLowerCase());
+      });
+
+    if (value == '') this.getProdutos()
+  }
+
   ngOnInit(): void {
 
     this.getProdutos();

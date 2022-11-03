@@ -36,15 +36,36 @@
         </div>
 
     </div>
-    <!-- <div class="container main-container2">
+    <div class="search">
+
+        <div class="input-group rounded src-bar">
+
+            <input type="search" class="form-control rounded" placeholder="Pesquisar Produto" aria-label="Pesquisar"
+                aria-describedby="search-addon" (input)="pesquisar($event)" />
+
+            <!-- Icone da lupa -->
+            <span class="border-0 srch-icon" id="search-addon">
+                <img width="40px" height="40px"
+                    src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="container main-container2">
         <div class="row text-center">
-            <div *ngFor="let produto of produtos" class="col-md-4" style="padding-bottom: 30px;">
+            <div *ngFor="let produto of produtos | paginate: { itemsPerPage: 9, currentPage: paginaAtual }; let i = index"
+                class="col-md-4" style="padding-bottom: 30px;">
                 <div class="card h-100">
-                    <a class="text-decoration-none" [routerLink]="['/produto-detalhe', produto.id]">
+
+                    <div style="align-content:center;">
+                        <!-- <img src="{{ produto.imagem }}" height="164px" width="253 px" alt=""> -->
+                        <img src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
+                    </div>
+
+                    <!-- <a class="text-decoration-none" [routerLink]="['/produto-detalhe', produto.id]">
                         <div style="align-content:center;">
                             <img src="/assets/{{ produto.imagem }}" height="164px" width="253 px" alt="">
                         </div>
-                    </a>
+                    </a> -->
                     <h4 class="card-title">{{produto.nome | titlecase}}</h4>
 
                     <div [ngSwitch]="produto.promocao">
@@ -56,8 +77,8 @@
 
                         <div>
                             <h4 class="card-text"> De:
-                                <small><del>{{produto.valor | currency: 'BRL':'symbol':'1.2-2':'pt'}}</del></small>
-                                Por: {{produto.valorPromo | currency: 'BRL':'symbol':'1.2-2':'pt'}}
+                                <small><del>{{produto.valor | currency: 'BRL'}}</del></small>
+                                Por: {{produto.valorPromo | currency: 'BRL'}}
                             </h4>
                         </div>
                     </div>
@@ -65,21 +86,24 @@
                     <div *ngIf="!produto.promocao" class="card-body">
 
                         <div>
-                            <h4>{{produto.valor | currency: 'BRL':'symbol':'1.2-2':'pt'}}</h4>
+                            <h4>{{produto.valor | currency: 'BRL'}}</h4>
                         </div>
                     </div>
 
 
                     <div class="card-footer">
-                        <a class="btn btn-primary">
+                        <a class="btn">
                             <span class="fa fa-shopping-cart"></span> Comprar
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="pagination fixed-botton">
+            <pagination-controls (click)="onActivate($event)" (pageChange)="paginaAtual = $event"></pagination-controls>
+        </div>
     </div>
- -->
+
 
 
 </div>

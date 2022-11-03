@@ -11,6 +11,8 @@ import { ListarProdutosComponent } from './Produtos/listar-produtos/listar-produ
 import { ListarCategoriasComponent } from './Categorias/listar-categorias/listar-categorias.component';
 import { CategoriasService } from './Service/categorias.service';
 import { ProdutosService } from './Service/produtos.service';
+import { HttpClientModule } from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProdutosService } from './Service/produtos.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgxPaginationModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     CategoriasService,
