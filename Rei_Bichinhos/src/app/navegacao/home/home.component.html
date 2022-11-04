@@ -40,7 +40,7 @@
 
         <div class="input-group rounded src-bar">
 
-            <input type="search" class="form-control rounded" placeholder="Pesquisar Produto" aria-label="Pesquisar"
+            <input type="search" class="form-control rounded" placeholder="Pesquisar Produtos" aria-label="Pesquisar"
                 aria-describedby="search-addon" (input)="pesquisar($event)" />
 
             <!-- Icone da lupa -->
@@ -58,7 +58,7 @@
 
                     <div style="align-content:center;">
                         <!-- <img src="{{ produto.imagem }}" height="164px" width="253 px" alt=""> -->
-                        <img src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
+                        <img class="cardBom" src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
                     </div>
 
                     <!-- <a class="text-decoration-none" [routerLink]="['/produto-detalhe', produto.id]">
@@ -101,6 +101,11 @@
         </div>
         <div class="pagination fixed-botton">
             <pagination-controls (click)="onActivate($event)" (pageChange)="paginaAtual = $event"></pagination-controls>
+        </div>
+        <div class="banner_inferior">
+            <a href="https://www.instagram.com/reidosbichinhos/" target="_blank" class=""> <img class="d-block w-100"
+                    style=" border-radius: 15px" src="/assets/banner_inferior2.png" height="250px">
+            </a>
         </div>
     </div>
 
