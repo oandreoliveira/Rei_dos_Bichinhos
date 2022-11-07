@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Categoria } from 'src/app/Interface/Categoria';
+import { Produto } from 'src/app/Interface/Produto';
+import { CategoriasService } from 'src/app/Service/categorias.service';
+import { ProdutosService } from 'src/app/Service/produtos.service';
 
 @Component({
   selector: 'app-editar-produtos',
@@ -8,9 +14,131 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarProdutosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private produtosService: ProdutosService, private router: Router,
+    private fb: FormBuilder, private ActivatedRoute: ActivatedRoute, private categoriasService: CategoriasService) { }
+
+  public "categorias": Categoria[];
+
+  public getCategorias() {
+    this.categoriasService.getCategorias()
+      .subscribe(
+        categorias => {
+          this.categorias = categorias
+          console.log(categorias)
+        },
+        error => { console.log(error) }
+      )
+
+  }
+  public promocaoIsTrue(): boolean {
+
+    return this.editarProdForm.controls.promocao.value == true;
+
+  }
+
+
+
+  editarProdForm = this.fb.group({
+    id: [, Validators.required],
+    nome: ['', Validators.required],
+    quantidade: [, Validators.required],
+    descricao: ['', Validators.required],
+    valor: ['', Validators.required],
+    promocao: [false, Validators.required],
+    valorPromo: [0, Validators.required],
+    imagem: ['', Validators.required],
+    isAtivo: [true, Validators.required],
+    alturaCm: [, Validators.required],
+    larguraCm: [, Validators.required],
+    pesoGr: [, Validators.required],
+    id_categoria: ['', Validators.required]
+    // categoria: ['', Validators.required]
+
+  });
+
+  public produto: Produto = {} as Produto;
+
+  // getProdutoId() {
+  //   this.produtosService.getProdutoById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
+  //     produto => {
+  //       this.produto = { ...produto } as Produto
+  //       this.editarProdForm.patchValue(this.produto)
+  //       console.log(JSON.stringify(this.produto))
+  //     },
+  //     erro => {
+  //       console.log('Não foi possivel localizar o Produto')
+  //     }
+  //   )
+  // }
+
+  // editarProduto() {
+  //   if (this.editarProdForm.invalid) {
+  //     return
+  //   }
+
+  //   // this.produto = {} as Produto
+  //   this.produto = { ... this.editarProdForm.value } as Produto
+
+  //   this.produtosService.putProduto(this.produto.id, this.produto).subscribe(
+  //     estab => {
+
+  //       this.router.navigate(['/Produtos'])
+  //     },
+  //     err => {
+
+  //       console.log('Erro')
+  //     })
+
+  // }
 
   ngOnInit(): void {
+    this.getCategorias();
+    // this.getProdutoId();
   }
+
+  onActivate(event: Event) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  public get nome() {
+    return this.editarProdForm.get('nome')!;
+  }
+  public get quantidade() {
+    return this.editarProdForm.get('quantidade')!;
+  }
+  public get descricao() {
+    return this.editarProdForm.get('descricao')!;
+  }
+  public get valor() {
+    return this.editarProdForm.get('valor')!;
+  }
+  public get promocao() {
+    return this.editarProdForm.get('promocao')!;
+  }
+  public get valorPromo() {
+    return this.editarProdForm.get('valorPromo')!;
+  }
+  public get imagem() {
+    return this.editarProdForm.get('imagem')!;
+  }
+  public get alturaCm() {
+    return this.editarProdForm.get('alturaCm')!;
+  }
+  public get larguraCm() {
+    return this.editarProdForm.get('larguraCm')!;
+  }
+  public get pesoGr() {
+    return this.editarProdForm.get('pesoGr')!;
+  }
+  public get id_categoria() {
+    return this.editarProdForm.get('id_categoria')!;
+  }
+  // public get categoria() {
+  //   return this.criarProdForm.get('categoria')!;
+  // }
 
 }
