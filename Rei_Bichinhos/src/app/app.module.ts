@@ -12,7 +12,9 @@ import { ListarCategoriasComponent } from './Categorias/listar-categorias/listar
 import { CategoriasService } from './Service/categorias.service';
 import { ProdutosService } from './Service/produtos.service';
 import { HttpClientModule } from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CriarProdutosComponent } from './Produtos/criar-produtos/criar-produtos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import {NgxPaginationModule} from 'ngx-pagination';
     FooterComponent,
     AreaAdministrativaComponent,
     ListarProdutosComponent,
-    ListarCategoriasComponent
+    ListarCategoriasComponent,
+    CriarProdutosComponent
   ],
   imports: [
     BrowserModule,
     NgxPaginationModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     CategoriasService,

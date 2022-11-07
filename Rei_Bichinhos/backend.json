@@ -1,249 +1,255 @@
 {
-    "produtos": [
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Urso Show",
+      "descricao": "Urso Show",
+      "valor": 25.9,
+      "promocao": true,
+      "valorPromo": 18.9,
+      "imagem": "https://a-static.mlcdn.com.br/1500x1500/urso-com-alca-carinhoso-pelucia-30cm-foffy/footeshoes/dei0668/2384839377f88d3948a7d5dd6d9e1485.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
         {
-            "id": 1,
-            "nome": "Urso Show",
-            "valor": 25.90,
-            "promocao": true,
-            "valorPromo": 18.90,
-            "imagem": "https://a-static.mlcdn.com.br/1500x1500/urso-com-alca-carinhoso-pelucia-30cm-foffy/footeshoes/dei0668/2384839377f88d3948a7d5dd6d9e1485.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "nome": "Urso Pooh",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://a-static.mlcdn.com.br/1500x1500/disney-pelucia-urso-pooh-big-feet-30cm-fun/gamesetoys/11406266580/a133c9312322af5b30c49443c24e29a2.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "nome": "Urso Rei",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://th.bing.com/th/id/OIP.pbd1zM5wnLZUwde-ag8GfAHaE8?pid=ImgDet&rs=1",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "nome": "Bob Esponja",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://http2.mlstatic.com/bob-esponja-pelucia-D_NQ_NP_18595-MLB20157081036_092014-F.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "nome": "Imbonha",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://a-static.mlcdn.com.br/1500x1500/boneca-pelucia-monica-sentada-26cm-turma-da-monica/rpecommerce/bopemosemo26cm/eb31dc37ac1f7ec6165d2254a1fd6a04.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "nome": "Pikachu",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://th.bing.com/th/id/OIP.v7sDFw9ItgwncC-Nw0yjnQHaHa?pid=ImgDet&rs=1",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "nome": "BulBasauro",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://th.bing.com/th/id/OIP.9R0oeMx4QsWjTEcb3Ca63AHaHa?pid=ImgDet&rs=1",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "nome": "Doguinho",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://th.bing.com/th/id/OIP.pqbyYUCd1wfMMXzm9VHYEwHaHa?pid=ImgDet&rs=1",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "nome": "Goku",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "https://static3.tcdn.com.br/img/img_prod/460977/pelucia_goku_sitting_pose_dragon_ball_z_31689_1_20201211174348.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "nome": "teste10",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "teste10.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "nome": "teste11",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "teste11.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "nome": "teste12",
-            "valor": 15.90,
-            "promocao": false,
-            "valorPromo": 0,
-            "imagem": "teste12.jpg",
-            "alturaCm": 30,
-            "larguraCm": 15,
-            "pesoGr": 300,
-            "isAtivo": true,
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Pelúcias",
-                    "isAtivo": true
-                }
-            ]
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
         }
-    ],
-    "categorias": [
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Urso Pooh",
+      "descricao": "Urso Pooh",
+      "valor": 15.9,
+      "promocao": true,
+      "valorPromo": 10,
+      "imagem": "https://a-static.mlcdn.com.br/1500x1500/disney-pelucia-urso-pooh-big-feet-30cm-fun/gamesetoys/11406266580/a133c9312322af5b30c49443c24e29a2.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
         {
-            "id": 1,
-            "nome": "Pelúcias",
-            "isAtivo": true
-        },
-        {
-            "id": 2,
-            "nome": "Action Figures",
-            "isAtivo": true
-        },
-        {
-            "id": 3,
-            "nome": "Mochilas",
-            "isAtivo": true
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
         }
-    ]
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Urso Rei",
+      "descricao": "Urso Rei",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://th.bing.com/th/id/OIP.pbd1zM5wnLZUwde-ag8GfAHaE8?pid=ImgDet&rs=1",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Bob Esponja",
+      "descricao": "Bob Esponja",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://http2.mlstatic.com/bob-esponja-pelucia-D_NQ_NP_18595-MLB20157081036_092014-F.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Imbonha",
+      "descricao": "Imbonha",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://a-static.mlcdn.com.br/1500x1500/boneca-pelucia-monica-sentada-26cm-turma-da-monica/rpecommerce/bopemosemo26cm/eb31dc37ac1f7ec6165d2254a1fd6a04.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Pikachu",
+      "descricao": "Pikachu",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://th.bing.com/th/id/OIP.v7sDFw9ItgwncC-Nw0yjnQHaHa?pid=ImgDet&rs=1",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "BulBasauro",
+      "descricao": "BulBasauro",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://th.bing.com/th/id/OIP.9R0oeMx4QsWjTEcb3Ca63AHaHa?pid=ImgDet&rs=1",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Doguinho",
+      "descricao": "Doguinho",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://th.bing.com/th/id/OIP.pqbyYUCd1wfMMXzm9VHYEwHaHa?pid=ImgDet&rs=1",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Goku",
+      "descricao": "Goku",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "https://static3.tcdn.com.br/img/img_prod/460977/pelucia_goku_sitting_pose_dragon_ball_z_31689_1_20201211174348.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "teste11",
+      "descricao": "teste11",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "teste11.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "teste12",
+      "descricao": "teste12",
+      "valor": 15.9,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "teste11.jpg",
+      "alturaCm": 30,
+      "larguraCm": 15,
+      "pesoGr": 300,
+      "isAtivo": true,
+      "categorias": [
+        {
+          "id": 1,
+          "nome": "Pelúcias",
+          "isAtivo": true
+        }
+      ]
+    },
+    {
+      "nome": "Teste",
+      "descricao": "Teste de Preço",
+      "valor": "80.00",
+      "promocao": true,
+      "valorPromo": "45",
+      "imagem": "https://th.bing.com/th/id/OIP.pqbyYUCd1wfMMXzm9VHYEwHaHa?pid=ImgDet&rs=1",
+      "isAtivo": true,
+      "alturaCm": "30",
+      "larguraCm": "10",
+      "pesoGr": "280",
+      "id_categoria": "1",
+      "id": 13
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Pelúcias",
+      "isAtivo": true
+    },
+    {
+      "id": 2,
+      "nome": "Action Figures",
+      "isAtivo": true
+    },
+    {
+      "id": 3,
+      "nome": "Mochilas",
+      "isAtivo": true
+    }
+  ]
 }

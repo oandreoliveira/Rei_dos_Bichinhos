@@ -1,0 +1,126 @@
+<div class="Container">
+    <div class="row titulo">
+        <a [routerLink]="['/Produtos']">
+            <div>
+                <img src="/assets/logo.png" width="100px" alt="">
+            </div>
+        </a>
+
+        <div>
+            <h1>Cadatrar Produtos</h1>
+        </div>
+    </div>
+
+    <form class="Form fadeInDown" [formGroup]="criarProdForm" (submit)="criarProduto()" #formDir="ngForm">
+
+        <!-- Nome input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Nome</label>
+            <input type="text" id="form1" class="form-control" formControlName="nome"
+                placeholder="Informar o nome do produto" />
+            <div *ngIf="nome.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="nome.errors?.['required']">O campo Nome é obrigatório.</p>
+                <!-- <p *ngIf="nome.errors?.['maxLength']">O nome só pode ter até 100 caracteres.</p>
+                <p *ngIf="nome.errors?.['minLength']">O nome pode ter no mínimo 20 caracteres.</p> -->
+                <!-- interrogação pq talvez não exista o erro -->
+            </div>
+        </div>
+        <!-- "promocao": false, -->
+
+        <!-- Descricao input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Descrição</label>
+            <input type="text" id="form2" class="form-control" formControlName="descricao"
+                placeholder="Descrever o produto e suas especificações" />
+            <div *ngIf="descricao.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="descricao.errors?.['required']">O campo Descrição é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Valor input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Valor</label>
+            <input type="text" id="form3" class="form-control" formControlName="valor"
+                placeholder="Informar o Valor ex 0.00" />
+            <div *ngIf="valor.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="valor.errors?.['required']">O campo Valor é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Promoção Select -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Está em Promoção?</label>
+            <select class="form-control" formControlName="promocao">
+                <option [ngValue]="false">Não</option>
+                <option [ngValue]="true">Sim</option>
+            </select>
+        </div>
+
+        <!-- ValorPromo input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Valor em Promoção</label>
+            <input type="text" min="0" id="form4" class="form-control" formControlName="valorPromo"
+                placeholder="Informar o Valor em Promoção ex 0.00" />
+            <div *ngIf="valorPromo.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="valorPromo.errors?.['required']">O campo Valor da Promoção é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Imagem input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Imagem</label>
+            <input type="text" id="form5" class="form-control" formControlName="imagem"
+                placeholder="Insira um link de uma Imagem do produto" />
+            <div *ngIf="imagem.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="imagem.errors?.['required']">O campo Imagem é obrigatório.</p>
+            </div>
+        </div>
+        <!-- alturaCm input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Altura em Centímetros</label>
+            <input type="text" id="form6" class="form-control" formControlName="alturaCm"
+                placeholder="Informar a Altura em Centímetros" />
+            <div *ngIf="alturaCm.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="alturaCm.errors?.['required']">O campo Altura em Centímetros é obrigatório.</p>
+            </div>
+        </div>
+        <!-- larguraCm input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Largura em Centímetros</label>
+            <input type="text" id="form7" class="form-control" formControlName="larguraCm"
+                placeholder="Informar a Largura em Centímetros" />
+            <div *ngIf="larguraCm.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="larguraCm.errors?.['required']">O campo Largura em Centímetros é obrigatório.</p>
+            </div>
+        </div>
+        <!-- pesoGr input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Peso em Gramas</label>
+            <input type="text" id="form6" class="form-control" formControlName="pesoGr"
+                placeholder="Informar o Peso em Gramas" />
+            <div *ngIf="pesoGr.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="pesoGr.errors?.['required']">O campo Peso em Gramas é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Categoria Select -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Categoria</label>
+            <select class="form-control" formControlName="id_categoria">
+                <option *ngFor="let categoria of categorias" value={{categoria.id}}>
+                    {{categoria.nome}}
+                </option>
+            </select>
+            <div *ngIf="id_categoria.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="id_categoria.errors?.['required']">O campo Categoria é obrigatório.</p>
+
+            </div>
+        </div>
+
+
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded "
+                (click)="onActivate($event)">Cadastrar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" (click)="onActivate($event)"
+                [routerLink]="['/Produtos']"> Cancelar
+            </button>
+        </div>
+    </form>
+</div>

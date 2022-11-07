@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
 
     this.produtos = this.produtos.filter(
       produtos => {
-        return produtos.nome.toLowerCase().includes(value.toLowerCase());
+        return produtos.nome?.toLowerCase().includes(value.toLowerCase());
       });
 
     if (value == '') this.getProdutos()

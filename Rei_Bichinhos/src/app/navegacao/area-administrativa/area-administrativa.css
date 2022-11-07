@@ -23,7 +23,7 @@
     margin: 8px;
     color: #ea5b23;
     font-weight: bold;
-    /* font-family: fantasy; */
+    font-family: inherit;
     font-size: 4.0rem;
     border-color: #1D3557;
 
@@ -35,7 +35,7 @@
     margin: 8px;
     color: #ea5b23;
     font-weight: bold;
-    /* font-family: fantasy; */
+    font-family: inherit;
     font-size: 1.2rem;
     border-color: #1D3557;
 }
@@ -65,4 +65,9 @@
 .containerBom {
     background-color: #faf5ee;
     padding-bottom: 10%;
+}
+
+.cardBom {
+    width: fit-content;
+    padding: 5%;
 }

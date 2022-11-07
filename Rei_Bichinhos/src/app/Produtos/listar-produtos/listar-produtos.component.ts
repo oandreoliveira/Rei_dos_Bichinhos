@@ -11,14 +11,29 @@ import { ProdutosService } from 'src/app/Service/produtos.service';
 })
 export class ListarProdutosComponent implements OnInit {
 
-  // public paginaAtual = 1;
-  // onActivate(event: Event) {
-  //   window.scroll({
-  //     top: 0,
-  //     left: 0,
-  //     behavior: 'smooth'
-  //   });
-  // }
+  public paginaAtual = 1;
+  onActivate(event: Event) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  public pesquisar(event: Event) {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.produtos = this.produtos.filter(
+      produtos => {
+        return produtos.nome?.toLowerCase().includes(value.toLowerCase());
+      });
+
+    if (value == '') this.getProdutos()
+  }
+
+
+
   constructor(private produtosService: ProdutosService) { }
   public "produtos": Produto[];
   public "categorias": Categoria[]; // ver se é preciso *******
@@ -33,6 +48,14 @@ export class ListarProdutosComponent implements OnInit {
         error => { console.log(error) }
       )
 
+  }
+  public delProdutos(id: number) {
+    this.produtosService.delProduto(id).subscribe(
+      () => {
+
+        this.getProdutos();
+      }
+    );
   }
 
   ngOnInit(): void {
