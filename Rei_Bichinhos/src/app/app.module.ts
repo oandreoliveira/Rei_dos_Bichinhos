@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CriarProdutosComponent } from './Produtos/criar-produtos/criar-produtos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produtos.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AreaAdministrativaComponent,
     ListarProdutosComponent,
     ListarCategoriasComponent,
-    CriarProdutosComponent
+    CriarProdutosComponent,
+    EditarProdutosComponent
   ],
   imports: [
     BrowserModule,

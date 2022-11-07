@@ -25,7 +25,14 @@
                 <!-- interrogação pq talvez não exista o erro -->
             </div>
         </div>
-        <!-- "promocao": false, -->
+        <!-- Quantidade input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Quantidade</label>
+            <input type="number" min="1" id="form3" class="form-control" formControlName="quantidade" placeholder="0" />
+            <div *ngIf="quantidade.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="quantidade.errors?.['required']">O campo Quantidade é obrigatório.</p>
+            </div>
+        </div>
 
         <!-- Descricao input -->
         <div class="form-outline mb-4">
@@ -39,8 +46,7 @@
         <!-- Valor input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Valor</label>
-            <input type="text" id="form3" class="form-control" formControlName="valor"
-                placeholder="Informar o Valor ex 0.00" />
+            <input type="number" min="0" id="form3" class="form-control" formControlName="valor" placeholder="0.00" />
             <div *ngIf="valor.invalid && formDir.submitted" class="validation-error">
                 <p *ngIf="valor.errors?.['required']">O campo Valor é obrigatório.</p>
             </div>
@@ -52,17 +58,21 @@
                 <option [ngValue]="false">Não</option>
                 <option [ngValue]="true">Sim</option>
             </select>
-        </div>
 
-        <!-- ValorPromo input -->
-        <div class="form-outline mb-4">
-            <label for="form5Example1" class="form-label">Valor em Promoção</label>
-            <input type="text" min="0" id="form4" class="form-control" formControlName="valorPromo"
-                placeholder="Informar o Valor em Promoção ex 0.00" />
-            <div *ngIf="valorPromo.invalid && formDir.submitted" class="validation-error">
-                <p *ngIf="valorPromo.errors?.['required']">O campo Valor da Promoção é obrigatório.</p>
+        </div>
+        <div *ngIf="promocaoIsTrue()">
+            <div class="form-outline mb-4">
+                <label for="form5Example1" class="form-label">Valor em Promoção</label>
+                <input type="number" min="0" id="form4" class="form-control" formControlName="valorPromo"
+                    placeholder="0.00" />
+                <div *ngIf="valorPromo.invalid && formDir.submitted" class="validation-error">
+                    <p *ngIf="valorPromo.errors?.['required']">O campo Valor da Promoção é obrigatório.</p>
+                </div>
             </div>
         </div>
+
+
+
         <!-- Imagem input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Imagem</label>
@@ -75,7 +85,7 @@
         <!-- alturaCm input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Altura em Centímetros</label>
-            <input type="text" id="form6" class="form-control" formControlName="alturaCm"
+            <input type="number" min="1" id="form6" class="form-control" formControlName="alturaCm"
                 placeholder="Informar a Altura em Centímetros" />
             <div *ngIf="alturaCm.invalid && formDir.submitted" class="validation-error">
                 <p *ngIf="alturaCm.errors?.['required']">O campo Altura em Centímetros é obrigatório.</p>
@@ -84,8 +94,8 @@
         <!-- larguraCm input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Largura em Centímetros</label>
-            <input type="text" id="form7" class="form-control" formControlName="larguraCm"
-                placeholder="Informar a Largura em Centímetros" />
+            <input type="number" min="1" id="form7" class="form-control" formControlName="larguraCm"
+                placeholder="0.00" />
             <div *ngIf="larguraCm.invalid && formDir.submitted" class="validation-error">
                 <p *ngIf="larguraCm.errors?.['required']">O campo Largura em Centímetros é obrigatório.</p>
             </div>
@@ -93,8 +103,7 @@
         <!-- pesoGr input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Peso em Gramas</label>
-            <input type="text" id="form6" class="form-control" formControlName="pesoGr"
-                placeholder="Informar o Peso em Gramas" />
+            <input type="number" min="1" id="form6" class="form-control" formControlName="pesoGr" placeholder="0.00" />
             <div *ngIf="pesoGr.invalid && formDir.submitted" class="validation-error">
                 <p *ngIf="pesoGr.errors?.['required']">O campo Peso em Gramas é obrigatório.</p>
             </div>
@@ -102,7 +111,7 @@
         <!-- Categoria Select -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Categoria</label>
-            <select class="form-control" formControlName="id_categoria">
+            <select type="number" class="form-control" formControlName="id_categoria">
                 <option *ngFor="let categoria of categorias" value={{categoria.id}}>
                     {{categoria.nome}}
                 </option>

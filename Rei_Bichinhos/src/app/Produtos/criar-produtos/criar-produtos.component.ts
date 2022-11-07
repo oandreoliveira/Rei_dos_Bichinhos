@@ -30,19 +30,31 @@ export class CriarProdutosComponent implements OnInit {
   }
   criarProdForm = this.fb.group({
     nome: ['', Validators.required],
+    quantidade: [, Validators.required],
     descricao: ['', Validators.required],
-    valor: ['0.00', Validators.required],
+    valor: ['', Validators.required],
     promocao: [false, Validators.required],
-    valorPromo: ['0.00', Validators.required],
+    valorPromo: [0, Validators.required],
     imagem: ['', Validators.required],
     isAtivo: [true, Validators.required],
-    alturaCm: ['0.00', Validators.required],
-    larguraCm: ['0.00', Validators.required],
-    pesoGr: ['0.00', Validators.required],
-    id_categoria: [0, Validators.required]
+    alturaCm: [, Validators.required],
+    larguraCm: [, Validators.required],
+    pesoGr: [, Validators.required],
+    id_categoria: [1, Validators.required]
     // categoria: ['', Validators.required]
 
   });
+
+  public promocaoIsTrue(): boolean {
+
+    return this.criarProdForm.controls.promocao.value == true;
+
+  }
+  public promocaoIsFalse(): boolean {
+
+    return this.criarProdForm.controls.promocao.value == false;
+
+  }
 
   public Produto: Produto = {} as Produto;
   public "produtos": Produto[];
@@ -80,6 +92,9 @@ export class CriarProdutosComponent implements OnInit {
   public get nome() {
     return this.criarProdForm.get('nome')!;
   }
+  public get quantidade() {
+    return this.criarProdForm.get('quantidade')!;
+  }
   public get descricao() {
     return this.criarProdForm.get('descricao')!;
   }
@@ -107,7 +122,9 @@ export class CriarProdutosComponent implements OnInit {
   public get id_categoria() {
     return this.criarProdForm.get('id_categoria')!;
   }
-
+  // public get categoria() {
+  //   return this.criarProdForm.get('categoria')!;
+  // }
 }
 
 

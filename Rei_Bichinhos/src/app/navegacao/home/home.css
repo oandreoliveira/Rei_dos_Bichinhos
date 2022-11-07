@@ -32,6 +32,10 @@ a.btn:hover {
 
 }
 
+.home {
+    background-color: #f0f0f0;
+}
+
 .carousel-item {
     border-radius: 100%;
 
@@ -71,7 +75,7 @@ a.btn:hover {
     border-radius: 10px 10px 10px 10px;
     max-width: 1000px;
     min-height: 400px;
-    background-color: transparent;
+    background-color: white;
 }
 
 .pagination {
@@ -106,5 +110,5 @@ a.btn:hover {
 
 .cardBom {
     width: fit-content;
-    padding: 5%;
+    padding: 9%;
 }

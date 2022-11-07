@@ -4,6 +4,7 @@ export interface Produto {
 
     id: number;
     nome?: string;
+    quantidade?: number;
     descricao?: string;
     valor?: number;
     promocao?: boolean;

@@ -3,6 +3,7 @@
     {
       "id": 1,
       "nome": "Urso Show",
+      "quantidade": 100,
       "descricao": "Urso Show",
       "valor": 25.9,
       "promocao": true,
@@ -23,6 +24,7 @@
     {
       "id": 2,
       "nome": "Urso Pooh",
+      "quantidade": 100,
       "descricao": "Urso Pooh",
       "valor": 15.9,
       "promocao": true,
@@ -43,6 +45,7 @@
     {
       "id": 3,
       "nome": "Urso Rei",
+      "quantidade": 100,
       "descricao": "Urso Rei",
       "valor": 15.9,
       "promocao": false,
@@ -63,6 +66,7 @@
     {
       "id": 4,
       "nome": "Bob Esponja",
+      "quantidade": 100,
       "descricao": "Bob Esponja",
       "valor": 15.9,
       "promocao": false,
@@ -83,6 +87,7 @@
     {
       "id": 5,
       "nome": "Imbonha",
+      "quantidade": 100,
       "descricao": "Imbonha",
       "valor": 15.9,
       "promocao": false,
@@ -103,6 +108,7 @@
     {
       "id": 6,
       "nome": "Pikachu",
+      "quantidade": 100,
       "descricao": "Pikachu",
       "valor": 15.9,
       "promocao": false,
@@ -123,6 +129,7 @@
     {
       "id": 7,
       "nome": "BulBasauro",
+      "quantidade": 100,
       "descricao": "BulBasauro",
       "valor": 15.9,
       "promocao": false,
@@ -143,6 +150,7 @@
     {
       "id": 8,
       "nome": "Doguinho",
+      "quantidade": 100,
       "descricao": "Doguinho",
       "valor": 15.9,
       "promocao": false,
@@ -163,6 +171,7 @@
     {
       "id": 9,
       "nome": "Goku",
+      "quantidade": 100,
       "descricao": "Goku",
       "valor": 15.9,
       "promocao": false,
@@ -182,32 +191,34 @@
     },
     {
       "id": 11,
-      "nome": "teste11",
+      "nome": "Gato",
+      "quantidade": 100,
       "descricao": "teste11",
       "valor": 15.9,
       "promocao": false,
       "valorPromo": 0,
-      "imagem": "teste11.jpg",
+      "imagem": "https://i.imgur.com/jLrg8mm.png",
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
       "categorias": [
         {
-          "id": 1,
-          "nome": "Pelúcias",
+          "id": 4,
+          "nome": "Fun",
           "isAtivo": true
         }
       ]
     },
     {
       "id": 12,
-      "nome": "teste12",
+      "nome": "Sapos",
+      "quantidade": 100,
       "descricao": "teste12",
       "valor": 15.9,
       "promocao": false,
       "valorPromo": 0,
-      "imagem": "teste11.jpg",
+      "imagem": "https://i.imgur.com/8kfaxIj.png",
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
@@ -221,18 +232,154 @@
       ]
     },
     {
-      "nome": "Teste",
+      "nome": "Tartaruga",
+      "quantidade": 100,
       "descricao": "Teste de Preço",
       "valor": "80.00",
       "promocao": true,
       "valorPromo": "45",
-      "imagem": "https://th.bing.com/th/id/OIP.pqbyYUCd1wfMMXzm9VHYEwHaHa?pid=ImgDet&rs=1",
+      "imagem": "https://i.imgur.com/sHxe4Wj.png",
       "isAtivo": true,
       "alturaCm": "30",
       "larguraCm": "10",
       "pesoGr": "280",
-      "id_categoria": "1",
+      "id_categoria": "4",
       "id": 13
+    },
+    {
+      "nome": "Polvos",
+      "quantidade": 100,
+      "descricao": "Caixa com 12",
+      "valor": "80",
+      "promocao": true,
+      "valorPromo": "59.90",
+      "imagem": "https://i.imgur.com/rPrJPMo.png",
+      "isAtivo": true,
+      "alturaCm": "10",
+      "larguraCm": "10",
+      "pesoGr": "150",
+      "id_categoria": "4",
+      "id": 14
+    },
+    {
+      "nome": "teste gato",
+      "quantidade": 100,
+      "descricao": "teste",
+      "valor": "50",
+      "promocao": true,
+      "valorPromo": "39.90",
+      "imagem": "https://i.imgur.com/jLrg8mm.png",
+      "isAtivo": true,
+      "alturaCm": "10",
+      "larguraCm": "20.00",
+      "pesoGr": "180",
+      "id_categoria": "4",
+      "id": 15
+    },
+    {
+      "nome": "Teste2",
+      "quantidade": 100,
+      "descricao": "Teste teste",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": "0.00",
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 20,
+      "larguraCm": 30,
+      "pesoGr": 300,
+      "id_categoria": "3",
+      "id": 16
+    },
+    {
+      "nome": "Teste2",
+      "quantidade": 20,
+      "descricao": "teste",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 10,
+      "larguraCm": 20,
+      "pesoGr": 50,
+      "id_categoria": "2",
+      "id": 17
+    },
+    {
+      "nome": "teste3",
+      "quantidade": 20,
+      "descricao": "teste",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": "0.00",
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 1,
+      "larguraCm": 1,
+      "pesoGr": 1,
+      "id_categoria": "2",
+      "id": 18
+    },
+    {
+      "nome": "teste",
+      "quantidade": 100,
+      "descricao": "teste",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": "0.00",
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 10,
+      "larguraCm": 10,
+      "pesoGr": 20,
+      "id_categoria": "2",
+      "id": 19
+    },
+    {
+      "nome": "teste",
+      "quantidade": 100,
+      "descricao": "teste",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 10,
+      "larguraCm": 20,
+      "pesoGr": 100,
+      "id_categoria": "3",
+      "id": 20
+    },
+    {
+      "nome": "Teste",
+      "quantidade": 200,
+      "descricao": "testes",
+      "valor": 100,
+      "promocao": false,
+      "valorPromo": 0,
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 200,
+      "larguraCm": 50,
+      "pesoGr": 300,
+      "id_categoria": "2",
+      "id": 21
+    },
+    {
+      "nome": "TesteCarlos",
+      "quantidade": 200,
+      "descricao": "teste",
+      "valor": 200,
+      "promocao": true,
+      "valorPromo": 35,
+      "imagem": "link",
+      "isAtivo": true,
+      "alturaCm": 10,
+      "larguraCm": 20,
+      "pesoGr": 10,
+      "id_categoria": "4",
+      "id": 22
     }
   ],
   "categorias": [
@@ -249,6 +396,11 @@
     {
       "id": 3,
       "nome": "Mochilas",
+      "isAtivo": true
+    },
+    {
+      "id": 4,
+      "nome": "Fun",
       "isAtivo": true
     }
   ]
