@@ -7,19 +7,13 @@
       "descricao": "Urso Show",
       "valor": 25.9,
       "promocao": true,
-      "valorPromo": 18.9,
+      "valorPromo": 15,
       "imagem": "https://a-static.mlcdn.com.br/1500x1500/urso-com-alca-carinhoso-pelucia-30cm-foffy/footeshoes/dei0668/2384839377f88d3948a7d5dd6d9e1485.jpg",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 0
     },
     {
       "id": 2,
@@ -90,20 +84,14 @@
       "quantidade": 100,
       "descricao": "Imbonha",
       "valor": 15.9,
-      "promocao": false,
-      "valorPromo": 0,
+      "promocao": true,
+      "valorPromo": 9.9,
       "imagem": "https://a-static.mlcdn.com.br/1500x1500/boneca-pelucia-monica-sentada-26cm-turma-da-monica/rpecommerce/bopemosemo26cm/eb31dc37ac1f7ec6165d2254a1fd6a04.jpg",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 0
     },
     {
       "id": 6,
@@ -260,21 +248,6 @@
       "pesoGr": "150",
       "id_categoria": "4",
       "id": 14
-    },
-    {
-      "nome": "teste gato",
-      "quantidade": 100,
-      "descricao": "teste",
-      "valor": "50",
-      "promocao": true,
-      "valorPromo": "39.90",
-      "imagem": "https://i.imgur.com/jLrg8mm.png",
-      "isAtivo": true,
-      "alturaCm": "10",
-      "larguraCm": "20.00",
-      "pesoGr": "180",
-      "id_categoria": "4",
-      "id": 15
     }
   ],
   "categorias": [

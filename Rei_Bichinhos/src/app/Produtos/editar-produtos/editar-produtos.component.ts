@@ -39,61 +39,61 @@ export class EditarProdutosComponent implements OnInit {
 
 
   editarProdForm = this.fb.group({
-    id: [, Validators.required],
+    id: [0, Validators.required],
     nome: ['', Validators.required],
-    quantidade: [, Validators.required],
+    quantidade: [0, Validators.required],
     descricao: ['', Validators.required],
-    valor: ['', Validators.required],
+    valor: [0, Validators.required],
     promocao: [false, Validators.required],
     valorPromo: [0, Validators.required],
     imagem: ['', Validators.required],
     isAtivo: [true, Validators.required],
-    alturaCm: [, Validators.required],
-    larguraCm: [, Validators.required],
-    pesoGr: [, Validators.required],
-    id_categoria: ['', Validators.required]
-    // categoria: ['', Validators.required]
+    alturaCm: [0, Validators.required],
+    larguraCm: [0, Validators.required],
+    pesoGr: [0, Validators.required],
+    id_categoria: [0, Validators.required]
+
 
   });
 
   public produto: Produto = {} as Produto;
 
-  // getProdutoId() {
-  //   this.produtosService.getProdutoById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
-  //     produto => {
-  //       this.produto = { ...produto } as Produto
-  //       this.editarProdForm.patchValue(this.produto)
-  //       console.log(JSON.stringify(this.produto))
-  //     },
-  //     erro => {
-  //       console.log('Não foi possivel localizar o Produto')
-  //     }
-  //   )
-  // }
+  getProdutoId() {
+    this.produtosService.getProdutoById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
+      produto => {
+        this.produto = { ...produto } as Produto
+        this.editarProdForm.patchValue(this.produto)
+        console.log(JSON.stringify(this.produto))
+      },
+      erro => {
+        console.log('Não foi possivel localizar o Produto')
+      }
+    )
+  }
 
-  // editarProduto() {
-  //   if (this.editarProdForm.invalid) {
-  //     return
-  //   }
+  editarProduto() {
+    if (this.editarProdForm.invalid) {
+      return
+    }
 
-  //   // this.produto = {} as Produto
-  //   this.produto = { ... this.editarProdForm.value } as Produto
+    // this.produto = {} as Produto
+    this.produto = { ... this.editarProdForm.value } as Produto
 
-  //   this.produtosService.putProduto(this.produto.id, this.produto).subscribe(
-  //     estab => {
+    this.produtosService.putProduto(this.produto.id, this.produto).subscribe(
+      estab => {
 
-  //       this.router.navigate(['/Produtos'])
-  //     },
-  //     err => {
+        this.router.navigate(['/Produtos'])
+      },
+      err => {
 
-  //       console.log('Erro')
-  //     })
+        console.log('Erro')
+      })
 
-  // }
+  }
 
   ngOnInit(): void {
     this.getCategorias();
-    // this.getProdutoId();
+    this.getProdutoId();
   }
 
   onActivate(event: Event) {
