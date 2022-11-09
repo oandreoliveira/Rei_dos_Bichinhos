@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Categoria } from 'src/app/Interface/Categoria';
 import { Produto } from 'src/app/Interface/Produto';
 import { CategoriasService } from 'src/app/Service/categorias.service';
@@ -14,7 +15,7 @@ import { ProdutosService } from 'src/app/Service/produtos.service';
 })
 export class CriarProdutosComponent implements OnInit {
 
-  constructor(private produtosService: ProdutosService, private router: Router, private fb: FormBuilder, private categoriasService: CategoriasService) { }
+  constructor(private produtosService: ProdutosService, private router: Router, private fb: FormBuilder, private categoriasService: CategoriasService, private toastr: ToastrService) { }
   public "categorias": Categoria[];
 
   public getCategorias() {
@@ -29,19 +30,20 @@ export class CriarProdutosComponent implements OnInit {
 
   }
   criarProdForm = this.fb.group({
+
     nome: ['', Validators.required],
-    quantidade: [, Validators.required],
+    quantidade: [new FormControl(), Validators.required],
     descricao: ['', Validators.required],
-    valor: ['', Validators.required],
+    valor: [new FormControl(), Validators.required],
     promocao: [false, Validators.required],
-    valorPromo: [0, Validators.required],
+    valorPromo: [new FormControl(), Validators.required],
     imagem: ['', Validators.required],
     isAtivo: [true, Validators.required],
-    alturaCm: [, Validators.required],
-    larguraCm: [, Validators.required],
-    pesoGr: [, Validators.required],
+    alturaCm: [new FormControl(), Validators.required],
+    larguraCm: [new FormControl(), Validators.required],
+    pesoGr: [new FormControl(), Validators.required],
     id_categoria: [1, Validators.required]
-    // categoria: ['', Validators.required]
+
 
   });
 
@@ -56,6 +58,14 @@ export class CriarProdutosComponent implements OnInit {
 
   }
 
+  showSuccess() {
+    this.toastr.success('', 'Cadastro realizado com Sucesso!');
+  }
+  showError() {
+    this.toastr.error('', 'Houve um problema com o Cadastro!');
+  }
+
+
   public Produto: Produto = {} as Produto;
   public "produtos": Produto[];
   criarProduto() {
@@ -65,11 +75,11 @@ export class CriarProdutosComponent implements OnInit {
     this.Produto = { ... this.criarProdForm.value } as Produto;
     this.produtosService.postProduto(this.Produto).subscribe(
       () => {
-
+        this.showSuccess();
         this.router.navigate(['/Produtos']);
       },
       erro => {
-
+        this.showError();
         console.log('Erro ao cadastrar')
       }
     )
@@ -122,9 +132,7 @@ export class CriarProdutosComponent implements OnInit {
   public get id_categoria() {
     return this.criarProdForm.get('id_categoria')!;
   }
-  // public get categoria() {
-  //   return this.criarProdForm.get('categoria')!;
-  // }
+
 }
 
 

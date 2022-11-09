@@ -16,6 +16,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CriarProdutosComponent } from './Produtos/criar-produtos/criar-produtos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produtos.component';
+import { CriarCategoriasComponent } from './Categorias/criar-categorias/criar-categorias.component';
+import { EditarCategoriasComponent } from './Categorias/editar-categorias/editar-categorias.component';
+
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,9 @@ import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produ
     ListarProdutosComponent,
     ListarCategoriasComponent,
     CriarProdutosComponent,
-    EditarProdutosComponent
+    EditarProdutosComponent,
+    CriarCategoriasComponent,
+    EditarCategoriasComponent
   ],
   imports: [
     BrowserModule,
@@ -36,10 +44,15 @@ import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produ
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     CategoriasService,
-    ProdutosService
+    ProdutosService,
+    CommonModule,
+    BrowserAnimationsModule,
+
+
   ],
   bootstrap: [AppComponent]
 })

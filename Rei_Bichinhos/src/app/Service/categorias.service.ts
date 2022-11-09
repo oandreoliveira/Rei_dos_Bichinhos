@@ -28,12 +28,12 @@ export class CategoriasService {
     return this.http.post<Categoria>(apiUrl, Categoria, httpHeaders);
   }
 
-  putCategoria(id: string, Categoria: Categoria): Observable<Categoria> {
+  putCategoria(id: any, Categoria: Categoria): Observable<Categoria> {
     const url = `${apiUrl}/${id}`
     return this.http.put<Categoria>(url, Categoria, httpHeaders);
   }
 
-  delCategoria(id: string): Observable<Categoria> {
+  delCategoria(id: any): Observable<Categoria> {
     const url = `${apiUrl}/${id}`
     return this.http.delete<Categoria>(url, httpHeaders);
   }

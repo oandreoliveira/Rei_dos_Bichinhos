@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Categoria } from 'src/app/Interface/Categoria';
 import { Produto } from 'src/app/Interface/Produto';
 import { CategoriasService } from 'src/app/Service/categorias.service';
@@ -15,7 +16,7 @@ import { ProdutosService } from 'src/app/Service/produtos.service';
 export class EditarProdutosComponent implements OnInit {
 
   constructor(private produtosService: ProdutosService, private router: Router,
-    private fb: FormBuilder, private ActivatedRoute: ActivatedRoute, private categoriasService: CategoriasService) { }
+    private fb: FormBuilder, private ActivatedRoute: ActivatedRoute, private categoriasService: CategoriasService, private toastr: ToastrService) { }
 
   public "categorias": Categoria[];
 
@@ -35,7 +36,12 @@ export class EditarProdutosComponent implements OnInit {
     return this.editarProdForm.controls.promocao.value == true;
 
   }
-
+  showSuccess() {
+    this.toastr.success('', 'Atualização realizada com Sucesso!');
+  }
+  showError() {
+    this.toastr.error('', 'Houve um problema com a atualização!');
+  }
 
 
   editarProdForm = this.fb.group({
@@ -61,11 +67,13 @@ export class EditarProdutosComponent implements OnInit {
   getProdutoId() {
     this.produtosService.getProdutoById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
       produto => {
+
         this.produto = { ...produto } as Produto
         this.editarProdForm.patchValue(this.produto)
         console.log(JSON.stringify(this.produto))
       },
       erro => {
+
         console.log('Não foi possivel localizar o Produto')
       }
     )
@@ -80,12 +88,12 @@ export class EditarProdutosComponent implements OnInit {
     this.produto = { ... this.editarProdForm.value } as Produto
 
     this.produtosService.putProduto(this.produto.id, this.produto).subscribe(
-      estab => {
-
+      produto => {
+        this.showSuccess();
         this.router.navigate(['/Produtos'])
       },
       err => {
-
+        this.showError();
         console.log('Erro')
       })
 

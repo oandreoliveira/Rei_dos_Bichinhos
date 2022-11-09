@@ -4,7 +4,7 @@ export interface Produto {
 
     id: number;
     nome?: string;
-    quantidade?: number;
+    quantidade: number;
     descricao?: string;
     valor?: number;
     promocao?: boolean;
@@ -15,6 +15,6 @@ export interface Produto {
     pesoGr?: number;
     isAtivo?: boolean;
     id_categoria?: number;
-    // categoria?: Categoria;
+
 
 }

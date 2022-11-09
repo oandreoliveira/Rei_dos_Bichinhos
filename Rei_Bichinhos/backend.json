@@ -13,7 +13,7 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": 0
+      "id_categoria": 1
     },
     {
       "id": 2,
@@ -28,13 +28,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 3,
@@ -49,13 +43,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 4,
@@ -70,13 +58,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 5,
@@ -106,13 +88,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 7,
@@ -127,13 +103,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 8,
@@ -148,13 +118,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 9,
@@ -169,13 +133,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 11,
@@ -190,13 +148,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 4,
-          "nome": "Fun",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "id": 12,
@@ -211,13 +163,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "categorias": [
-        {
-          "id": 1,
-          "nome": "Pelúcias",
-          "isAtivo": true
-        }
-      ]
+      "id_categoria": 4
     },
     {
       "nome": "Tartaruga",
@@ -231,7 +177,7 @@
       "alturaCm": "30",
       "larguraCm": "10",
       "pesoGr": "280",
-      "id_categoria": "4",
+      "id_categoria": 4,
       "id": 13
     },
     {
@@ -246,15 +192,29 @@
       "alturaCm": "10",
       "larguraCm": "10",
       "pesoGr": "150",
-      "id_categoria": "4",
+      "id_categoria": 4,
       "id": 14
+    },
+    {
+      "id": 15,
+      "nome": "Teste 50",
+      "quantidade": 200,
+      "descricao": "teste",
+      "valor": 100,
+      "promocao": true,
+      "valorPromo": 50,
+      "imagem": "https://a-static.mlcdn.com.br/1500x1500/boneco-sonic-de-pelucia-50cm-verde-ourico-lindo/stylevisioair/15200771413/b3d74d2bf2702e0be4b94b1d6299c879.jpg",
+      "isAtivo": true,
+      "alturaCm": 30,
+      "larguraCm": 20,
+      "pesoGr": 400,
+      "id_categoria": 4
     }
   ],
   "categorias": [
     {
       "id": 1,
-      "nome": "Pelúcias",
-      "isAtivo": true
+      "nome": "Pelúcias"
     },
     {
       "id": 2,
@@ -267,9 +227,12 @@
       "isAtivo": true
     },
     {
-      "id": 4,
       "nome": "Fun",
-      "isAtivo": true
+      "id": 4
+    },
+    {
+      "nome": "teste20",
+      "id": 8
     }
   ]
 }

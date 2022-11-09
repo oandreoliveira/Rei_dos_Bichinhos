@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Categoria } from 'src/app/Interface/Categoria';
 import { Produto } from 'src/app/Interface/Produto';
 import { ProdutosService } from 'src/app/Service/produtos.service';
@@ -34,7 +35,7 @@ export class ListarProdutosComponent implements OnInit {
 
 
 
-  constructor(private produtosService: ProdutosService) { }
+  constructor(private produtosService: ProdutosService, private toastr: ToastrService) { }
   public "produtos": Produto[];
   public "categorias": Categoria[]; // ver se é preciso *******
 
@@ -49,10 +50,19 @@ export class ListarProdutosComponent implements OnInit {
       )
 
   }
+
+
+  showSuccess() {
+    this.toastr.success('', 'Excluído com Sucesso!');
+  }
+  showError() {
+    this.toastr.error('', 'Houve um problema com a Exclusão!');
+  }
+
   public delProdutos(id: number) {
     this.produtosService.delProduto(id).subscribe(
       () => {
-
+        this.showSuccess();
         this.getProdutos();
       }
     );
