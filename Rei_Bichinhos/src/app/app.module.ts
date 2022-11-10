@@ -22,6 +22,8 @@ import { EditarCategoriasComponent } from './Categorias/editar-categorias/editar
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { animation } from '@angular/animations';
+import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/listar-produtos-home.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { ToastrModule } from 'ngx-toastr';
     CriarProdutosComponent,
     EditarProdutosComponent,
     CriarCategoriasComponent,
-    EditarCategoriasComponent
+    EditarCategoriasComponent,
+    ListarProdutosHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -45,12 +48,14 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot()
+
   ],
   providers: [
     CategoriasService,
     ProdutosService,
     CommonModule,
     BrowserAnimationsModule,
+    Animation,
 
 
   ],

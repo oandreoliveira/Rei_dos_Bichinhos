@@ -2,14 +2,36 @@ import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Categoria } from 'src/app/Interface/Categoria';
 import { CategoriasService } from 'src/app/Service/categorias.service';
+import {
+  trigger,
+  transition,
+  style,
+  animate,
+} from "@angular/animations";
 
 @Component({
   selector: 'app-listar-categorias',
   templateUrl: './listar-categorias.html',
-  styleUrls: ['./listar-categorias.css'
-  ]
+  styleUrls: ['./listar-categorias.css'],
+  // animations: [
+
+  //   trigger('slideIn', [
+  //     transition('* => void', [
+  //       animate(300),
+  //       style({
+  //         transform: 'translateX(100px)',
+  //         opacity: 0
+  //       })
+  //     ])
+  //   ])
+  // ]
+
 })
+
+
 export class ListarCategoriasComponent implements OnInit {
+
+
 
   constructor(private categoriasService: CategoriasService, private toastr: ToastrService) { }
 

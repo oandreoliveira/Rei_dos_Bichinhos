@@ -7,6 +7,7 @@ import { AreaAdministrativaComponent } from './navegacao/area-administrativa/are
 import { HomeComponent } from './navegacao/home/home.component';
 import { CriarProdutosComponent } from './Produtos/criar-produtos/criar-produtos.component';
 import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produtos.component';
+import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/listar-produtos-home.component';
 import { ListarProdutosComponent } from './Produtos/listar-produtos/listar-produtos.component';
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'Editar-Produtos/:id', component: EditarProdutosComponent },
   { path: 'Categorias', component: ListarCategoriasComponent },
   { path: 'Editar-Categorias/:id', component: EditarCategoriasComponent },
-  { path: 'Criar-Categorias', component: CriarCategoriasComponent }
+  { path: 'Criar-Categorias', component: CriarCategoriasComponent },
+  { path: 'Produtos-Home', component: ListarProdutosHomeComponent }
 
 
 

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './component.html'
+  templateUrl: './component.html',
 
 
 })

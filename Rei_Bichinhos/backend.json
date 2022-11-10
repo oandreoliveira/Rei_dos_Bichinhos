@@ -223,16 +223,23 @@
     },
     {
       "id": 3,
-      "nome": "Mochilas",
+      "nome": "Action Figures",
       "isAtivo": true
     },
     {
-      "nome": "Fun",
-      "id": 4
+      "id": 4,
+      "nome": "Action Figures",
+      "isAtivo": true
     },
     {
-      "nome": "teste20",
-      "id": 8
+      "id": 5,
+      "nome": "Action Figures",
+      "isAtivo": true
+    },
+    {
+      "id": 6,
+      "nome": "Action Figures",
+      "isAtivo": true
     }
   ]
 }

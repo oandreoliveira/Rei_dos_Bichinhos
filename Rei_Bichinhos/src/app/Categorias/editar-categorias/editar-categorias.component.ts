@@ -71,6 +71,6 @@ export class EditarCategoriasComponent implements OnInit {
   }
 
   public get nome() {
-    return this.criarProdForm.get('nome')!; //exclamação pq o valor pode não existir
+    return this.criarProdForm.get('nome')!;
   }
 }
