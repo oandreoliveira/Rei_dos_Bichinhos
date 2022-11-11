@@ -24,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { animation } from '@angular/animations';
 import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/listar-produtos-home.component';
+import { ListarProdutosCategoriasComponent } from './Categorias/listar-produtos-categorias/listar-produtos-categorias.component';
+import { DetalharProdutoComponent } from './Produtos/detalhar-produto/detalhar-produto.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/lis
     EditarProdutosComponent,
     CriarCategoriasComponent,
     EditarCategoriasComponent,
-    ListarProdutosHomeComponent
+    ListarProdutosHomeComponent,
+    ListarProdutosCategoriasComponent,
+    DetalharProdutoComponent
   ],
   imports: [
     BrowserModule,

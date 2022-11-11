@@ -18,7 +18,8 @@ export class CriarCategoriasComponent implements OnInit {
 
   criarProdForm = this.fb.group({
 
-    nome: ['', Validators.required]
+    nome: ['', Validators.required],
+    imagem: ['', Validators.required]
 
 
   });
@@ -56,6 +57,9 @@ export class CriarCategoriasComponent implements OnInit {
 
   public get nome() {
     return this.criarProdForm.get('nome')!;
+  }
+  public get imagem() {
+    return this.criarProdForm.get('imagem')!;
   }
 
 

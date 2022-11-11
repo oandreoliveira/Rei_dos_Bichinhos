@@ -28,7 +28,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": 1
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       "larguraCm": 15,
       "pesoGr": 300,
       "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": 1
     },
     {
       "id": 4,
@@ -54,11 +54,11 @@
       "promocao": false,
       "valorPromo": 0,
       "imagem": "https://http2.mlstatic.com/bob-esponja-pelucia-D_NQ_NP_18595-MLB20157081036_092014-F.jpg",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": "2"
     },
     {
       "id": 5,
@@ -73,7 +73,7 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": 0
+      "id_categoria": "2"
     },
     {
       "id": 6,
@@ -84,11 +84,11 @@
       "promocao": false,
       "valorPromo": 0,
       "imagem": "https://th.bing.com/th/id/OIP.v7sDFw9ItgwncC-Nw0yjnQHaHa?pid=ImgDet&rs=1",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": "2"
     },
     {
       "id": 7,
@@ -99,11 +99,11 @@
       "promocao": false,
       "valorPromo": 0,
       "imagem": "https://th.bing.com/th/id/OIP.9R0oeMx4QsWjTEcb3Ca63AHaHa?pid=ImgDet&rs=1",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": "2"
     },
     {
       "id": 8,
@@ -129,11 +129,11 @@
       "promocao": false,
       "valorPromo": 0,
       "imagem": "https://static3.tcdn.com.br/img/img_prod/460977/pelucia_goku_sitting_pose_dragon_ball_z_31689_1_20201211174348.jpg",
+      "isAtivo": true,
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "isAtivo": true,
-      "id_categoria": 4
+      "id_categoria": 2
     },
     {
       "id": 11,
@@ -209,37 +209,214 @@
       "larguraCm": 20,
       "pesoGr": 400,
       "id_categoria": 4
+    },
+    {
+      "id": 16,
+      "nome": "Pepa Teste",
+      "quantidade": 50,
+      "descricao": "Teste",
+      "valor": 100,
+      "promocao": true,
+      "valorPromo": 50,
+      "imagem": "https://rihappy.vtexassets.com/arquivos/ids/3142672-1200-auto?v=637873279350270000&width=1200&height=auto&aspect=true",
+      "isAtivo": true,
+      "alturaCm": 60,
+      "larguraCm": 30,
+      "pesoGr": 250,
+      "id_categoria": "6"
+    },
+    {
+      "id": 17,
+      "nome": "Teste50Teste",
+      "quantidade": 60,
+      "descricao": "teste",
+      "valor": 50,
+      "promocao": true,
+      "valorPromo": 25,
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/9eef61e7-b390-4f3b-8817-339816cefc52___e91446f93aafff735fbbbede0738928a.png",
+      "isAtivo": true,
+      "alturaCm": 80,
+      "larguraCm": 50,
+      "pesoGr": 300,
+      "id_categoria": "4"
     }
   ],
   "categorias": [
     {
       "id": 1,
-      "nome": "Pelúcias"
+      "nome": "Pelúcias",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/9eef61e7-b390-4f3b-8817-339816cefc52___e91446f93aafff735fbbbede0738928a.png",
+      "produtos": [
+        {
+          "id": 1,
+          "nome": "Urso Show",
+          "quantidade": 100,
+          "descricao": "Urso Show",
+          "valor": 25.9,
+          "promocao": true,
+          "valorPromo": 15,
+          "imagem": "https://a-static.mlcdn.com.br/1500x1500/urso-com-alca-carinhoso-pelucia-30cm-foffy/footeshoes/dei0668/2384839377f88d3948a7d5dd6d9e1485.jpg",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": 1
+        },
+        {
+          "id": 2,
+          "nome": "Urso Pooh",
+          "quantidade": 100,
+          "descricao": "Urso Pooh",
+          "valor": 15.9,
+          "promocao": true,
+          "valorPromo": 10,
+          "imagem": "https://a-static.mlcdn.com.br/1500x1500/disney-pelucia-urso-pooh-big-feet-30cm-fun/gamesetoys/11406266580/a133c9312322af5b30c49443c24e29a2.jpg",
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "isAtivo": true,
+          "id_categoria": 1
+        },
+        {
+          "id": 3,
+          "nome": "Urso Rei",
+          "quantidade": 100,
+          "descricao": "Urso Rei",
+          "valor": 15.9,
+          "promocao": false,
+          "valorPromo": 0,
+          "imagem": "https://th.bing.com/th/id/OIP.pbd1zM5wnLZUwde-ag8GfAHaE8?pid=ImgDet&rs=1",
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "isAtivo": true,
+          "id_categoria": 1
+        }
+      ]
     },
     {
       "id": 2,
-      "nome": "Action Figures",
-      "isAtivo": true
+      "nome": "Personagens",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/b83ffb2f-8edd-4f65-ba70-4a88a7d9c213___814b5ddfb80de3c1deac4555c7a83931.png",
+      "produtos": [
+        {
+          "id": 4,
+          "nome": "Bob Esponja",
+          "quantidade": 100,
+          "descricao": "Bob Esponja",
+          "valor": 15.9,
+          "promocao": false,
+          "valorPromo": 0,
+          "imagem": "https://http2.mlstatic.com/bob-esponja-pelucia-D_NQ_NP_18595-MLB20157081036_092014-F.jpg",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": "2"
+        },
+        {
+          "id": 5,
+          "nome": "Imbonha",
+          "quantidade": 100,
+          "descricao": "Imbonha",
+          "valor": 15.9,
+          "promocao": true,
+          "valorPromo": 9.9,
+          "imagem": "https://a-static.mlcdn.com.br/1500x1500/boneca-pelucia-monica-sentada-26cm-turma-da-monica/rpecommerce/bopemosemo26cm/eb31dc37ac1f7ec6165d2254a1fd6a04.jpg",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": "2"
+        },
+        {
+          "id": 6,
+          "nome": "Pikachu",
+          "quantidade": 100,
+          "descricao": "Pikachu",
+          "valor": 15.9,
+          "promocao": false,
+          "valorPromo": 0,
+          "imagem": "https://th.bing.com/th/id/OIP.v7sDFw9ItgwncC-Nw0yjnQHaHa?pid=ImgDet&rs=1",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": "2"
+        },
+        {
+          "id": 7,
+          "nome": "BulBasauro",
+          "quantidade": 100,
+          "descricao": "BulBasauro",
+          "valor": 15.9,
+          "promocao": false,
+          "valorPromo": 0,
+          "imagem": "https://th.bing.com/th/id/OIP.9R0oeMx4QsWjTEcb3Ca63AHaHa?pid=ImgDet&rs=1",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": "2"
+        },
+        {
+          "id": 9,
+          "nome": "Goku",
+          "quantidade": 100,
+          "descricao": "Goku",
+          "valor": 15.9,
+          "promocao": false,
+          "valorPromo": 0,
+          "imagem": "https://static3.tcdn.com.br/img/img_prod/460977/pelucia_goku_sitting_pose_dragon_ball_z_31689_1_20201211174348.jpg",
+          "isAtivo": true,
+          "alturaCm": 30,
+          "larguraCm": 15,
+          "pesoGr": 300,
+          "id_categoria": 2
+        }
+      ]
     },
     {
       "id": 3,
-      "nome": "Action Figures",
-      "isAtivo": true
+      "nome": "Almofadas",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/c3d75762-9919-4bea-8525-0b0682fef12f___9191e56154e8ea7ec15de42424e5600e.png",
+      "produtos": []
     },
     {
       "id": 4,
-      "nome": "Action Figures",
-      "isAtivo": true
+      "nome": "Mochilas",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/4051d5fd-cfd4-42fa-be00-4e921549cfec___07c018aed4322b463de88391bffb91c3.png",
+      "produtos": []
     },
     {
       "id": 5,
-      "nome": "Action Figures",
-      "isAtivo": true
+      "nome": "Fun",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/76c26bff-5cf4-47fd-bdad-d723cc72fc92___a248fbca1b1c64b25d1e9a833a7d1c62.png",
+      "produtos": []
     },
     {
       "id": 6,
-      "nome": "Action Figures",
-      "isAtivo": true
+      "nome": "Bonecas de Pano",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/31843519-490f-43e9-84e4-d572f6bd357f___67f7a794b29278e211e8dc09c8025746.png",
+      "produtos": []
+    },
+    {
+      "id": 7,
+      "nome": "Miniaturas",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/ca70d263-66f7-4810-9f91-c602f7528024___1b8469ea41259e187ccbdc097d236ff8.png",
+      "produtos": []
+    },
+    {
+      "nome": "Safari",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/cfc8ab7d-3dd2-4634-a32d-3e22633bd955___27eab9338bcb5e2ac7c7d6d176788ac4.png",
+      "id": 8,
+      "produtos": []
+    },
+    {
+      "nome": "Almofada de Pescoço",
+      "imagem": "https://rihappynovo.vtexassets.com/assets/vtex.file-manager-graphql/images/594607f0-8350-4f41-892c-321e1cbffa47___e2cc6179db78f4e5081c526c94c59700.png",
+      "id": 9,
+      "produtos": []
     }
   ]
 }

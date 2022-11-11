@@ -18,7 +18,15 @@
                 <p *ngIf="nome.errors?.['required']">O campo Nome da Categoria é obrigatório.</p>
             </div>
         </div>
-
+        <!-- Imagem input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Imagem</label>
+            <input type="text" id="form5" class="form-control" formControlName="imagem"
+                placeholder="Insira um link de uma Imagem da categoria" />
+            <div *ngIf="imagem.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="imagem.errors?.['required']">O campo Imagem é obrigatório.</p>
+            </div>
+        </div>
 
         <!-- Submit button -->
         <div class="submit">

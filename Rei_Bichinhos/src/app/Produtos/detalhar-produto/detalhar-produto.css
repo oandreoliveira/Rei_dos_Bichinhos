@@ -1,4 +1,3 @@
-/* Home */
 .bg-secondary1 {
 
     padding-top: 80px;
@@ -31,7 +30,7 @@
 .row.text-center {
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 0px;
 }
 
@@ -41,8 +40,6 @@
     font-weight: bold;
     height: 40px;
     border-radius: 20px;
-
-
 }
 
 a.btn {
@@ -51,12 +48,10 @@ a.btn {
 
 .btn:hover {
     background-color: #ea5b23;
-
 }
 
 a.btn:hover {
     color: #ffffff;
-
 }
 
 .home {
@@ -65,25 +60,19 @@ a.btn:hover {
 
 .carousel-item {
     border-radius: 100%;
-
 }
 
 .carousel {
     border-radius: 100%;
-    padding-bottom: 50px;
-    padding-top: 30px;
-
 }
 
-/* .teste1 {
-
+.teste1 {
     margin-bottom: 60px;
     margin-top: 80px;
-
-} */
+}
 
 .main-container2 {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 100px;
@@ -104,6 +93,15 @@ a.btn:hover {
     background-color: white;
 }
 
+.cardCat {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100px;
+    min-height: 40px;
+    background-color: transparent;
+}
+
 .pagination {
     display: flex;
     align-items: right;
@@ -113,6 +111,8 @@ a.btn:hover {
 .search {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
+
 
 }
 
@@ -125,16 +125,51 @@ a.btn:hover {
 
 }
 
-.banner_inferior {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
 
 .cardBom {
     width: fit-content;
     padding: 9%;
+}
+
+/* teste */
+
+
+
+.titulo {
+    padding-top: 40px;
+    color: #E63946;
+    /* font-weight: bold; */
+    font-size: 4rem;
+    font-family: fantasy;
+    border-color: #1D3557;
+    text-align: center;
+
+}
+
+.texto {
+    color: #1D3557;
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+
+}
+
+
+
+label {
+    color: #E63946;
+    font-size: 1.3rem;
+    font-family: fantasy;
+}
+
+.imagem {
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+
+
+}
+
+.card-img-top {
+    border-radius: 10px 10px 10px 10px;
 }

@@ -42,7 +42,7 @@ export class CriarProdutosComponent implements OnInit {
     alturaCm: [new FormControl(), Validators.required],
     larguraCm: [new FormControl(), Validators.required],
     pesoGr: [new FormControl(), Validators.required],
-    id_categoria: [1, Validators.required]
+    id_categoria: [new FormControl(), Validators.required]
 
 
   });

@@ -22,6 +22,7 @@ export class EditarCategoriasComponent implements OnInit {
   criarProdForm = this.fb.group({
     id: [0, Validators.required],
     nome: ['', Validators.required],
+    imagem: ['', Validators.required],
     // isAtivo: [true, Validators.required]
   });
 
@@ -72,5 +73,8 @@ export class EditarCategoriasComponent implements OnInit {
 
   public get nome() {
     return this.criarProdForm.get('nome')!;
+  }
+  public get imagem() {
+    return this.criarProdForm.get('imagem')!;
   }
 }

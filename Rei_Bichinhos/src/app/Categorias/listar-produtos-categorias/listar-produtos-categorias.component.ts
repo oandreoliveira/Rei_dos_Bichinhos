@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { Categoria } from 'src/app/Interface/Categoria';
 import { Produto } from 'src/app/Interface/Produto';
 import { CategoriasService } from 'src/app/Service/categorias.service';
 import { ProdutosService } from 'src/app/Service/produtos.service';
-
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.css']
+  selector: 'app-listar-produtos-categorias',
+  templateUrl: './listar-produtos-categorias.html',
+  styleUrls: ['./listar-produtos-categorias.css'
+  ]
 })
-
-export class HomeComponent implements OnInit {
+export class ListarProdutosCategoriasComponent implements OnInit {
 
   public paginaAtual = 1;
   onActivate(event: Event) {
@@ -22,12 +21,27 @@ export class HomeComponent implements OnInit {
       behavior: 'smooth'
     });
   }
-  constructor(private produtosService: ProdutosService, private categoriasService: CategoriasService,
-    private router: Router, private ActivatedRoute: ActivatedRoute) { }
+
+  public pesquisar(event: Event) {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+
+    this.categoria.produtos = this.categoria.produtos!.filter(
+      produtos => {
+        return produtos.nome?.toLowerCase().includes(value.toLowerCase());
+      });
+
+    if (value == '') this.getProdutos()
+  }
+
+
+  constructor(private categoriaService: CategoriasService, private produtosService: ProdutosService, private ActivatedRoute: ActivatedRoute, private router: Router) { }
 
   public "produtos": Produto[];
   public "categorias": Categoria[];
   public categoria: Categoria = {} as Categoria;
+  // public produto: Produto = {} as Produto;
+
 
 
   public getProdutos() {
@@ -39,11 +53,10 @@ export class HomeComponent implements OnInit {
         },
         error => { console.log(error) }
       )
-
   }
 
   public getCategorias() {
-    this.categoriasService.getCategorias()
+    this.categoriaService.getCategorias()
       .subscribe(
         categorias => {
           this.categorias = categorias
@@ -56,7 +69,7 @@ export class HomeComponent implements OnInit {
 
 
   getCategoriaId() {
-    this.categoriasService.getCategoriaById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
+    this.categoriaService.getCategoriaById(this.ActivatedRoute.snapshot.paramMap.get('id')).subscribe(
       categoria => {
         this.categoria = { ...categoria } as Categoria
         console.log(JSON.stringify(this.categoria))
@@ -68,25 +81,11 @@ export class HomeComponent implements OnInit {
     )
   }
 
-  public pesquisar(event: Event) {
-    const target = event.target as HTMLInputElement;
-    const value = target.value;
-
-    this.produtos = this.produtos.filter(
-      produtos => {
-        return produtos.nome?.toLowerCase().includes(value.toLowerCase());
-      });
-
-    if (value == '') this.getProdutos()
-  }
-
   ngOnInit(): void {
-
-    this.getProdutos();
-    this.getCategorias();
     this.getCategoriaId();
+    this.getCategorias();
+    this.getProdutos();
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false; // refresh em rotas da mesma página
   }
 
 }
-
-
