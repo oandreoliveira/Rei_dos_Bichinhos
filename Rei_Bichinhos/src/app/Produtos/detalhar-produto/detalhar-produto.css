@@ -32,6 +32,7 @@
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 0px;
+
 }
 
 .btn {
@@ -58,21 +59,9 @@ a.btn:hover {
     background-color: #f0f0f0;
 }
 
-.carousel-item {
-    border-radius: 100%;
-}
 
-.carousel {
-    border-radius: 100%;
-}
 
-.teste1 {
-    margin-bottom: 60px;
-    margin-top: 80px;
-}
-
-.main-container2 {
-    padding-top: 10px;
+.container main-container2 {
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 100px;
@@ -85,13 +74,14 @@ a.btn:hover {
 .card {
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     box-shadow: 10px 10px 26px #f69f54, -10px -10px 26px #f69f54;
     border-radius: 10px 10px 10px 10px;
-    max-width: 1000px;
-    min-height: 400px;
+    /* max-width: 1000px;
+    min-height: 400px; */
     background-color: white;
 }
+
 
 .cardCat {
     display: flex;
@@ -102,74 +92,93 @@ a.btn:hover {
     background-color: transparent;
 }
 
-.pagination {
-    display: flex;
-    align-items: right;
-    justify-content: center;
-}
-
-.search {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-
-
-}
-
-.input-group {
-
-    max-width: 450px;
-    align-items: center;
-    padding-bottom: 30px;
-    border-radius: 50%;
-
-}
-
-
 .cardBom {
     width: fit-content;
-    padding: 9%;
+    padding: 5%;
 }
 
 /* teste */
-
-
-
-.titulo {
-    padding-top: 40px;
-    color: #E63946;
-    /* font-weight: bold; */
-    font-size: 4rem;
-    font-family: fantasy;
-    border-color: #1D3557;
-    text-align: center;
-
+.teste {
+    padding-top: 30px;
 }
+
 
 .texto {
     color: #1D3557;
     font-size: 1.1rem;
-    /* font-weight: bold; */
+    font-family: inherit;
+    padding-left: 20px;
 
 }
 
+p.texto {
+    color: #1D3557;
+    font-size: 15px;
+    font-family: inherit;
+    padding-left: 10px;
+}
+
+p.texto1 {
+    color: #1D3557;
+    font-size: 15px;
+    font-family: inherit;
+    padding-left: 50px;
+}
 
 
 label {
-    color: #E63946;
-    font-size: 1.3rem;
-    font-family: fantasy;
+    color: #ea5b23;
+    font-weight: bold;
+    font-family: inherit;
+    padding-left: 30px;
+    font-size: 15px;
 }
 
-.imagem {
+h4 {
+    color: #ea5b23;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 50px;
+
+}
+
+h3 {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 30px;
+    color: #212529;
+}
+
+.promo1 {
+    color: #ea5b23;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 20px;
+
+}
+
+.promo2 {
+    color: #ea5b23;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 20px;
+
+}
+
+/* .imagem {
     padding-top: 2%;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 2%;
 
-
-}
+} */
 
 .card-img-top {
     border-radius: 10px 10px 10px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
 }

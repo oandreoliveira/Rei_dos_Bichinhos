@@ -58,7 +58,7 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": "2"
+      "id_categoria": 2
     },
     {
       "id": 5,
@@ -73,13 +73,13 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": "2"
+      "id_categoria": 2
     },
     {
       "id": 6,
       "nome": "Pikachu",
       "quantidade": 100,
-      "descricao": "Pikachu",
+      "descricao": "Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu Pikachu ",
       "valor": 15.9,
       "promocao": false,
       "valorPromo": 0,
@@ -88,7 +88,7 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": "2"
+      "id_categoria": 2
     },
     {
       "id": 7,
@@ -103,7 +103,7 @@
       "alturaCm": 30,
       "larguraCm": 15,
       "pesoGr": 300,
-      "id_categoria": "2"
+      "id_categoria": 2
     },
     {
       "id": 8,
