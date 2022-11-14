@@ -33,10 +33,12 @@ export class CriarProdutosComponent implements OnInit {
 
     nome: ['', Validators.required],
     quantidade: [new FormControl(), Validators.required],
+    codigo: ['', Validators.required],
+    modelo: ['', Validators.required],
     descricao: ['', Validators.required],
     valor: [new FormControl(), Validators.required],
     promocao: [false, Validators.required],
-    valorPromo: [new FormControl(), Validators.required],
+    valorPromo: [0, Validators.required],
     imagem: ['', Validators.required],
     isAtivo: [true, Validators.required],
     alturaCm: [new FormControl(), Validators.required],
@@ -132,6 +134,13 @@ export class CriarProdutosComponent implements OnInit {
   public get id_categoria() {
     return this.criarProdForm.get('id_categoria')!;
   }
+  public get codigo() {
+    return this.criarProdForm.get('codigo')!;
+  }
+  public get modelo() {
+    return this.criarProdForm.get('modelo')!;
+  }
+
 
 }
 

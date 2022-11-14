@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Carrinho de Compras : TERABYTESHOP</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PWJ7GD');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="title" content="Carrinho de Compras : TERABYTESHOP" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="TerabyteShop - Carrinho de Compras" />
+    <meta name="author" content="t-commerce.com.br" />
+    <meta name="copyright" content="(c)2019 TERABYTESHOP RJ COMERCIO DE PRODUTOS DE INFORMATICA LTDA" />
+    <meta name="resource-type" content="" />
+    <meta name="distribution" content="Global" />
+    <meta name="doc-class" content="Completed" />
+    <meta name="revisit-after" content="7 Days" />
+    <meta name="robots" content="All" />
+    <meta name="classification" content="" />
+    <meta name="audience" content="all" />
+    <meta name="theme-color" content="#ff5800">
+    <meta name="msapplication-navbutton-color" content="#ff5800">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="canonical" href="https://192.168.25.157/ShoppingCart.obj" />
+
+    <link rel="shortcut icon" href="https://www.terabyteshop.com.br/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/reset.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/style.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/fonts.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/libs.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/produto.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/css/shopping.min.css" />
+    <link rel="stylesheet" href="https://www.terabyteshop.com.br/assets/lightbox/css/lightbox.css" />
+
+
+    <style>
+        body {
+            background: #fdfdfd;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="loader2" id="loadercustom">
+        <div class="wrap-loader2">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
+            <h3></h3>
+        </div>
+    </div>
+
+    <div id="body" style="min-height:300px;">
+        <div class="container">
+            <div class="progresso-compra">
+                <div class="head-prog">
+                    <h2>CARRINHO</h2>
+                </div>
+
+                <ul class="list-unstyled progEtapas">
+
+                    <li class="progAtivo carrinho progrTooltip">
+                        <div class="progrTooltip-content">
+                            <div class="progrTooltip-arrow"></div>
+                            <p>Carrinho</p>
+                        </div>
+                    </li>
+                    <li class="identificacao progrTooltip">
+                        <div class="progrTooltip-content">
+                            <div class="progrTooltip-arrow"></div>
+                            <p>Identificação</p>
+                        </div>
+                    </li>
+                    <li class="envio progrTooltip">
+                        <div class="progrTooltip-content">
+                            <div class="progrTooltip-arrow"></div>
+                            <p>Entrega</p>
+                        </div>
+                    </li>
+                    <li class="pagamento progrTooltip">
+                        <div class="progrTooltip-content">
+                            <div class="progrTooltip-arrow"></div>
+                            <p>Pagamento</p>
+                        </div>
+                    </li>
+                    <li class="confirmacao progrTooltip">
+                        <div class="progrTooltip-content">
+                            <div class="progrTooltip-arrow"></div>
+                            <p>Confirmação</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="clear"></div>
+            <div id="cartcontent" class="content Tcart">
+
+
+
+                <div class="col-md-8">
+                    <form name="frmcart" id="frmcart" action="" method="post">
+                        <input type="hidden" name="cartupdate" value="true">
+                        <input type="hidden" name="app" value="true">
+
+                        <ul class="carrTlist">
+                            <li class="itemCarrT">
+                                <div class="carrTlitemlink hidden-xs hidden-sm" name="link10767"></div>
+                                <button data-id="10767"
+                                    data-alert="Remover Computador T-home Amd Athlon 240ge 3.5ghz 5mb / 8gb Ddr4 / Hd 1tb?"
+                                    class="carrTrem" data-qtd="1" data-toggle="tooltip" data-placement="top"
+                                    title="Remover" aria-label="remover">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                                <div class="col-xs-3 col-md-1">
+                                    <a title="Computador T-home Amd Athlon 240ge 3.5ghz 5mb / 8gb Ddr4 / Hd 1tb"
+                                        href="http://192.168.25.157/produto/10767/computador-t-home-amd-athlon-20ge-32ghz-5mb-8gb-ddr4-hd-1tb"><img
+                                            src="https://s3.us-east-2.amazonaws.com/img.terabyteshop.com.br/produto/p/gabinete-aerocool-si-5101-mid-tower-preto_51584.png"
+                                            alt="Computador T-home Amd Athlon 240ge 3.5ghz 5mb / 8gb Ddr4 / Hd 1tb"></a>
+                                </div>
+                                <div class="col-xs-9 col-md-5">
+                                    <a title="Computador T-home Amd Athlon 240ge 3.5ghz 5mb / 8gb Ddr4 / Hd 1tb"
+                                        href="http://192.168.25.157/produto/10767/computador-t-home-amd-athlon-20ge-32ghz-5mb-8gb-ddr4-hd-1tb">
+                                        <div class="carrTdesc">Computador T-home Amd Athlon 240ge 3.5ghz 5mb / 8gb Ddr4
+                                            / Hd 1tb</div>
+
+                                        <div class="carrTinfDesc">13% de desconto à vista</div>
+
+
+                                    </a>
+                                </div>
+                                <div class="clear hidden-md hidden-lg divitemCarrT"></div>
+                                <div class="col-xs-6 col-md-3 invertR">
+                                    <div class="carrTqtd">
+                                        <button id="minuscart" class="menos-quant" title="Diminuir"
+                                            data-id="10767">-</button>
+
+                                        <input id="10767" class="quantidade qt-itens-car" type="text" value="1" min="1"
+                                            disabled aria-label="quantidade">
+
+                                        <!--<input id="quantidade" type="hidden" value="1" name="qtd[10767]" min="1">-->
+
+                                        <input class="10767" type="hidden" value="1,1,1" name="produtos[10767]">
+                                        <button id="pluscart" class="mais-quant" title="Aumentar"
+                                            data-id="10767">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 invertL">
+                                    <div class="carrTlistpreco">R$ 1.535,27</div>
+                                </div>
+
+
+                                <div class="row clear">
+                                    <div class="col-md-12">
+                                        <div class="panel-group" id="carrTacordion" class='left-nav-menu'>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="panel-title">
+                                                        <a class="collapsed accordion-toggle" data-toggle="collapse"
+                                                            data-parent="#accordion" aria-expanded="false"
+                                                            aria-controls="collapseOne" href="#c10767">
+                                                            <span
+                                                                class="glyphicon glyphicon-info-sign col-md-1 carrTitensIcon "></span>Ver
+                                                            Itens desse Kit
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                                <div id="c10767" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div id="" class="carrTlistaItemPC">
+                                                            <ul>
+                                                                <li>Processador AMD Athlon 240GE 3.5GHz, Dual Core 5MB
+                                                                    AM4, YD240GC6FBBOX (x1)</li>
+                                                                <li>Placa Mãe Biostar A320MH, Chipset A320, AMD AM4,
+                                                                    mATX, DDR4 (x1)</li>
+                                                                <li>Memória DDR4 XPG Gammix D10, 8GB 3000Mhz,
+                                                                    AX4U300038G16A-BB10 (x1)</li>
+                                                                <li>HD Seagate Barracuda 1TB, Sata III, 7200RPM, 64MB,
+                                                                    ST1000DM010 (x1)</li>
+                                                                <li>Fonte Aerocool 350W, VX-350 (x1)</li>
+                                                                <li>Gabinete Aerocool SI-5101 Mid Tower Preto (x1)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+
+
+                            <li class="itemCarrT">
+
+
+                                <button data-id="11363"
+                                    data-alert="Remover Placa de Vídeo Galax Geforce RTX 2080 Ex Gamer (1-Click OC - V2), 8GB GDDR6, 28NSL6MDW7G2?"
+                                    class="carrTrem" data-qtd="1" data-toggle="tooltip" data-placement="top"
+                                    title="Remover" aria-label="remover">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                                <div class="col-xs-3 col-md-1">
+                                    <a title="Placa de Vídeo Galax Geforce RTX 2080 Ex Gamer (1-Click OC - V2), 8GB GDDR6, 28NSL6MDW7G2"
+                                        href="http://192.168.25.157/produto/11363/placa-de-video-galax-geforce-rtx-2080-ex-gamer-1-click-oc-v2-8gb-gddr6-28nsl6mdw7g2"><img
+                                            src="https://s3.us-east-2.amazonaws.com/img.terabyteshop.com.br/produto/p/placa-de-video-galax-geforce-rtx-2080-ex-gamer-1-click-oc-v2-8gb-gddr6-28nsl6mdw7g2_74033.jpg"
+                                            alt="Placa de Vídeo Galax Geforce RTX 2080 Ex Gamer (1-Click OC - V2), 8GB GDDR6, 28NSL6MDW7G2"></a>
+                                </div>
+                                <div class="col-xs-9 col-md-5">
+                                    <a title="Placa de Vídeo Galax Geforce RTX 2080 Ex Gamer (1-Click OC - V2), 8GB GDDR6, 28NSL6MDW7G2"
+                                        href="http://192.168.25.157/produto/11363/placa-de-video-galax-geforce-rtx-2080-ex-gamer-1-click-oc-v2-8gb-gddr6-28nsl6mdw7g2">
+                                        <div class="carrTdesc">Placa de Vídeo Galax Geforce RTX 2080 Ex Gamer (1-Click
+                                            OC - V2), 8GB GDDR6, 28NSL6MDW7G2</div>
+
+                                        <div class="carrTinfDesc">13% de desconto à vista</div>
+
+
+                                    </a>
+                                </div>
+                                <div class="clear hidden-md hidden-lg divitemCarrT"></div>
+                                <div class="col-xs-6 col-md-3 invertR">
+                                    <div class="carrTqtd">
+                                        <button id="minuscart" class="menos-quant" title="Diminuir"
+                                            data-id="11363">-</button>
+
+                                        <input id="11363" class="quantidade qt-itens-car" type="text" value="1" min="1"
+                                            disabled aria-label="quantidade">
+
+                                        <!--<input id="quantidade" type="hidden" value="1" name="qtd[11363]" min="1">-->
+
+                                        <input class="11363" type="hidden" value="1,1,1" name="produtos[11363]">
+                                        <button id="pluscart" class="mais-quant" title="Aumentar"
+                                            data-id="11363">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 invertL">
+                                    <div class="carrTlistpreco">R$ 4.711,49</div>
+                                </div>
+
+
+
+                            </li>
+
+
+                            <li class="itemCarrT">
+
+
+                                <button data-id="10799"
+                                    data-alert="Remover Pasta Térmica Cooler Master E2 IC Essential RG-ICE2-TA15-R1?"
+                                    class="carrTrem" data-qtd="1" data-toggle="tooltip" data-placement="top"
+                                    title="Remover" aria-label="remover">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                                <div class="col-xs-3 col-md-1">
+                                    <a title="Pasta Térmica Cooler Master E2 IC Essential RG-ICE2-TA15-R1"
+                                        href="http://192.168.25.157/produto/10799/pasta-termica-cooler-master-e2-ic-essential-rg-ice2-ta15-r1"><img
+                                            src="https://s3.us-east-2.amazonaws.com/img.terabyteshop.com.br/produto/p/pasta-termica-cooler-master-e2-ic-essential-rg-ice2-ta15-r1_68572.jpg"
+                                            alt="Pasta Térmica Cooler Master E2 IC Essential RG-ICE2-TA15-R1"></a>
+                                </div>
+                                <div class="col-xs-9 col-md-5">
+                                    <a title="Pasta Térmica Cooler Master E2 IC Essential RG-ICE2-TA15-R1"
+                                        href="http://192.168.25.157/produto/10799/pasta-termica-cooler-master-e2-ic-essential-rg-ice2-ta15-r1">
+                                        <div class="carrTdesc">Pasta Térmica Cooler Master E2 IC Essential
+                                            RG-ICE2-TA15-R1</div>
+
+                                        <div class="carrTinfDesc">13% de desconto à vista</div>
+
+
+                                    </a>
+                                </div>
+                                <div class="clear hidden-md hidden-lg divitemCarrT"></div>
+                                <div class="col-xs-6 col-md-3 invertR">
+                                    <div class="carrTqtd">
+                                        <button id="minuscart" class="menos-quant" title="Diminuir"
+                                            data-id="10799">-</button>
+
+                                        <input id="10799" class="quantidade qt-itens-car" type="text" value="1" min="1"
+                                            disabled aria-label="quantidade">
+
+                                        <!--<input id="quantidade" type="hidden" value="1" name="qtd[10799]" min="1">-->
+
+                                        <input class="10799" type="hidden" value="1,1,1" name="produtos[10799]">
+                                        <button id="pluscart" class="mais-quant" title="Aumentar"
+                                            data-id="10799">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 invertL">
+                                    <div class="carrTlistpreco">R$ 40,11</div>
+                                </div>
+
+
+
+                            </li>
+
+
+                        </ul>
+
+                        <div class="limpaCart"><button class="btLcart" data-toggle="tooltip" data-placement="top"
+                                title="Tem certeza disso?" aria-label="Limpar carrinho">Limpar carrinho <i
+                                    class="fa fa-times"></i></button>
+                        </div>
+
+                    </form>
+
+                    <div class="carrTareaCalculos">
+                        <div class="col-xs-3 col-md-2">
+                            <button class="down-orcamento" data-toggle="tooltip" data-placement="top"
+                                title="Salvar orçamento">
+                                <i class="fa fa-cloud-download"></i>
+                                <div class="txtOrcamento"><strong>ORÇAMENTO</strong></div>
+                            </button>
+                        </div>
+                        <div class="col-xs-9 col-md-4">
+                            <div class="exxibir_cupom">
+                                <div class="col-md-6 col-sm-12 col-xs-12">CUPOM DE DESCONTO</div>
+                                <span class="exxibir_area_cupom">
+                                    <div class="cuponns">
+                                        <div class="col-md-12 col-sm-6 col-xs-12 nopadding">
+                                            <input id="cupom" class="hidden_cupom campo-desc" type="text"
+                                                placeholder="Digite o seu cupom" value="" />
+                                            <button id="calCupom" class="hidden_cupom bt-desc">
+                                                <span>Aplicar </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="clear hidden-md hidden-lg pddFreteCupom"></div>
+                        <div class="col-xs-12 col-md-6">
+                            <form id="frmshipping">
+                                <div class="AreaFrete">
+                                    <div class="col-md-9 col-sm-6 col-xs-6 nopadding">
+                                        <input type="text" id="cep" class="cepInput shopp-cep" value=""
+                                            placeholder="Qual CEP de entrega?" required aria-label="cep">
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 nopadding">
+                                        <button class="calcFrete btcalcular visible">CALCULAR</button>
+                                        <button class="calculandofrete hidden"><span
+                                                class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>&nbsp;
+                                            Calculando...</button>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="AreaSelEntrega"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 nopadding">
+                        <div class="clear"></div>
+                        <div id="f_entrega" class="AreaSelEntrega"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 carrTfechamento" id="myScrollspy">
+
+                    <div class="affix affix-top" data-spy="affix" data-offset-top="0" id="ts">
+                        <div class="carrTpedidoRes">
+                            <div class="row">
+                                <div class="col-xs-8 col-md-8">Subtotal</div>
+                                <div id="valorsubtotal" class="col-xs-4 col-md-4">R$ 6.286,87</div>
+                            </div>
+                            <!-- <div class="row carrTareaFrete" style="display:none;">
+          <div class="col-xs-8 col-md-8">Difal</div>
+          <div id="valordifal" class="col-xs-4 col-md-4">#VALORDIFAL#</div>
+        </div> -->
+                            <div class="row carrTareaFrete">
+                                <div class="col-xs-8 col-md-8">Frete</div>
+                                <div id="valorfrete" class="col-xs-4 col-md-4">R$ 0,00</div>
+                                <div class="clear"></div>
+                                <div class="col-md-12">
+                                    <div id="freteorientacao" class="freteorientacao"></div>
+                                </div>
+                            </div>
+                            <div class="row" id="labelfrete" style="display:none;">
+                                <div class="carrTareaCupom">
+                                    <div class="col-xs-8 col-md-8">Imposto Interestadual
+                                        <a href="#" data-toggle="modal" data-target="#ModalDifal">(DIFAL) <i
+                                                class="glyphicon glyphicon-info-sign"></i> </a>
+                                    </div>
+                                    <div id="valordifal" class="col-xs-4 col-md-4">#VALORDIFAL#</div>
+                                    <div class="clear"></div>
+                                    <div class="col-md-12">
+                                        <div id="difalobservacao" class="freteorientacao"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="carrTareaCupom">
+                                    <div class="limpaCuopm">
+                                        <button class="btLcupom" data-toggle="tooltip" data-placement="top"
+                                            title="Limpar cupom" aria-label="Limpar cupom">
+                                            <i class="fa fa-times"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-8 col-md-8">Desconto Cupom</div>
+                                    <div id="valorcupom" class="col-xs-4 col-md-4">R$ 0,00</div>
+                                    <div class="clear"></div>
+                                    <div class="col-md-12">
+                                        <div id="observacao" class="cupomOrientacao"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carrTareaTotal">
+                            <div class="row carrTtotal">
+                                <div class="col-xs-8 col-md-8"><b>TOTAL</b></div>
+                                <div class="col-xs-4 col-md-4"><span id="valortotal">R$ 6.286,87</span></div>
+                                <span id="vo_total" style="display:none;">6286.87</span>
+                            </div>
+
+                            <div class="row carrTformasPgtCart">
+                                <div class="col-xs-2 col-md-2"><i class="fa fa-credit-card"></i></div>
+                                <div class="col-xs-10 col-md-10 nopadding"><span id="qtd_de_parcelas">12</span>x de
+                                    <span id="val_cada_parcela">R$ 523,91</span> <br>sem juros no cartão
+                                </div>
+                                <span id="vo_parcela" style="display:none;">523.91</span>
+                                <span id="vo_totalparcelado" style="display:none;">523.91</span>
+                            </div>
+
+
+                            <div class="row carrTformasPgtBol">
+                                <div class="col-xs-2 col-md-2"><i class="fa fa-barcode"></i></div>
+                                <div class="col-xs-10 col-md-10 nopadding"><span id="vl_com_desconto_avista"
+                                        class="green">R$ 5.469,58</span> <br>com desconto à vista no boleto</div>
+                                <span id="vo_vista" style="display:none;">5469.58</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 nopadding">
+                                    <span data-toggle="tooltip" data-placement="top"
+                                        title="Para finalizar pedido, calcule o frete.">
+                                        <button id="cart_go_disabled" class="carrTbtFecharPedido_disabled">FECHAR PEDIDO
+                                            <i class="fa fa-chevron-right ir"></i>
+                                        </button>
+                                    </span>
+                                    <button id="cart_go" class="carrTbtFecharPedido hidden"
+                                        onclick="fecharPedido()">FECHAR PEDIDO
+                                        <i class="fa fa-chevron-right ir"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Modal Difal -->
+                <div id="ModalDifal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Imposto Interestadual (DIFAL)</h4>
+                            </div>
+                            <div class="modal-body ">
+                                <p>
+                                    Difal, diferencial de aliquota de ICMS entre Estados.<br />
+                                    Imposto cobrado para toda as vendas realizadas por e-commerce.<br />
+                                    Compre com segurança sem risco de ter sua mercadoria retida em fiscalizações.
+                                </p>
+                                <p>
+                                    O imposto interestadual (DIFAL) <strong>é obrigatório</strong> e devidamente
+                                    fundamentado pela Emenda Constitucional 87 de 16/04/2015 </p>
+                                <p><a href="http://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc87.htm"
+                                        target="_blank">http://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc87.htm</a>
+                                </p>
+                                <div class="modal-footer text-center alert-success hidden">
+                                    <a href="#" data-dismiss="modal"> </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Modal Difal -->
+                <div class="zx_40F34D234261AE7A1C3C zx_mediaslot"></div>
+
+            </div>
+
+        </div>
+        <link rel="stylesheet" href="http://192.168.25.157/css/shopping.min.css" />
+        <!--  Basket page tag ---->
+        <script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+        <script type="text/javascript">
+            window.criteo_q = window.criteo_q || [];
+            window.criteo_q.push(
+                { event: "setAccount", account: 14498 },
+                { event: "setEmail", email: "" },
+                { event: "setSiteType", type: (/iPad/.test(navigator.userAgent) ? "t" : (/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile/.test(navigator.userAgent) ? "m" : "d")) },
+                { event: "viewBasket", item: [{ id: "10767", price: 1535.27, quantity: 1 }, { id: "11363", price: 4711.49, quantity: 1 }, { id: "10799", price: 40.11, quantity: 1 }] });
+        </script>
+        <script type="text/javascript">
+            var google_tag_params = {
+                ecomm_prodid: ['10767', '11363', '10799'],
+                ecomm_totalvalue: 6286.87,
+                ecomm_pagetype: "cart",
+            };
+        </script>
+        <script type="text/javascript">
+            var zx_products = [
+                { identifier: "10767", price: "1535.27", currency: "R$", quantity: "1" }, { identifier: "11363", price: "4711.49", currency: "R$", quantity: "1" }, { identifier: "10799", price: "40.11", currency: "R$", quantity: "1" }
+            ];
+        </script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/assets/jquery/jquery-2.2.4.min.js"></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/assets/jquery/jquery-migrate-1.2.1.min.js"
+            defer></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/js/bootstrap.min.js"></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/assets/mask/jquery.mask.min.js"></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/js/app.min.js?1571423100" defer></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/js/main.min.js"></script>
+        <script data-cfasync="true" src="https://www.terabyteshop.com.br/js/all.min.js"></script>

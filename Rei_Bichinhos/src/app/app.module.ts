@@ -26,6 +26,8 @@ import { animation } from '@angular/animations';
 import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/listar-produtos-home.component';
 import { ListarProdutosCategoriasComponent } from './Categorias/listar-produtos-categorias/listar-produtos-categorias.component';
 import { DetalharProdutoComponent } from './Produtos/detalhar-produto/detalhar-produto.component';
+import { CarrinhoComponent } from './Compras/carrinho/carrinho.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { DetalharProdutoComponent } from './Produtos/detalhar-produto/detalhar-p
     EditarCategoriasComponent,
     ListarProdutosHomeComponent,
     ListarProdutosCategoriasComponent,
-    DetalharProdutoComponent
+    DetalharProdutoComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,

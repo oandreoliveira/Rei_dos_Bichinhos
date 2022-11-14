@@ -5,6 +5,8 @@ export interface Produto {
     id: number;
     nome?: string;
     quantidade: number;
+    codigo?: string;
+    modelo?: string;
     descricao?: string;
     valor?: number;
     promocao?: boolean;

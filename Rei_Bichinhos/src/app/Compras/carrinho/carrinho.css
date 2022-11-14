@@ -1,0 +1,39 @@
+.limpaCart .btLcart {
+    background: 0;
+    font-size: 12px;
+    position: relative;
+    float: right;
+    right: 0;
+    padding: 4px 7px 9px 0;
+    color: #bbb;
+    z-index: 9999;
+}
+
+.limpaCart .btLcart:hover {
+    color: #ff5800;
+}
+
+/*alterar*/
+.carrTareaCupom {
+    position: relative
+}
+
+/*alterar*/
+
+.limpaCuopm .btLcupom {
+    background: 0;
+    font-size: 12px;
+    position: absolute;
+    float: right;
+    right: 0;
+    color: #bbb;
+    z-index: 9999;
+}
+
+.limpaCuopm .btLcupom:hover {
+    color: #ff5800;
+}
+
+body {
+    padding-top: -200px;
+}

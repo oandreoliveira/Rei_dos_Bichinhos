@@ -85,6 +85,7 @@ export class HomeComponent implements OnInit {
     this.getProdutos();
     this.getCategorias();
     this.getCategoriaId();
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
 
 }
