@@ -1,10 +1,30 @@
 {
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "adm@rdb.com.br",
+      "senha": "adm",
+      "isAtivo": true
+    },
+    {
+      "email": "teste@teste.com",
+      "senha": "123456",
+      "id": 2,
+      "isAtivo": true
+    },
+    {
+      "id": 3,
+      "email": "teste2@teste.com",
+      "senha": "54321"
+    }
+  ],
   "produtos": [
     {
+      "id": 26,
       "nome": "Elefante Colorido",
       "quantidade": 50,
-      "codigo": "25365",
-      "modelo": "F0",
+      "codigo": "526528",
+      "modelo": "F1",
       "descricao": "Unidade",
       "valor": 28,
       "promocao": false,
@@ -14,8 +34,7 @@
       "alturaCm": 35,
       "larguraCm": 28,
       "pesoGr": 300,
-      "id_categoria": 3,
-      "id": 26
+      "id_categoria": 3
     },
     {
       "nome": "Dinossauro",

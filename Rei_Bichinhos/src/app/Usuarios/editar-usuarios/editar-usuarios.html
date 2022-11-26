@@ -1,0 +1,37 @@
+<div class="Container">
+    <div class="row titulo">
+        <div>
+            <a [routerLink]="['/Usuarios']"> <img src="/assets/logo.png" width="100px" alt=""></a>
+        </div>
+        <div>
+            <h1>Atualizar Usuário</h1>
+        </div>
+    </div>
+
+    <form class="Form" [formGroup]=" editarUserForm" (submit)="editaUsuario()" #formDir="ngForm">
+
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">E-mail</label>
+            <input type="text" id="form1" class="form-control" formControlName="email" placeholder="Email do Usuário" />
+            <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="email.errors?.['required']">O campo Nome do Usuario é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Senha input -->
+
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Senha</label>
+            <input type="text" id="form1" class="form-control" formControlName="senha" placeholder="Senha do Usuário" />
+            <div *ngIf="senha.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="senha.errors?.['required']">O campo Senha do Usuário é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Submit button -->
+        <div class="submit">
+            <button type="submit" class="btn btn-outline-success btn-rounded ">Atualizar</button>
+            <button type="" class="btn btn-outline-danger btn-rounded" [routerLink]="['/Usuarios']"> Cancelar
+            </button>
+        </div>
+    </form>
+</div>

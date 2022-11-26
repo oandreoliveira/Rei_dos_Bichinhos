@@ -1,0 +1,44 @@
+<div class="Container">
+
+    <!-- [formGroup]="postCli" (submit)="addCliente()"  -->
+
+    <form class="Form fadeInDown" [formGroup]="postUser" #formDir="ngForm">
+        <div class="row titulo">
+            <div>
+                <a [routerLink]="['/Home']"> <img src="/assets/logo.png" width="100px" alt=""></a>
+
+            </div>
+            <div>
+                <p> Login</p>
+            </div>
+        </div>
+        <!-- Cpf input -->
+        <div class="form-outline mb-4">
+            <label class="form-label">E-mail</label>
+            <input type="text" id="form1" class="form-control" formControlName="email"
+                placeholder="exemplo@exemplo.com" />
+
+            <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="email.errors?.['required']">O campo e-mail é obrigatório.</p>
+
+            </div>
+
+            <!-- senha -->
+            <label class="form-label">Senha</label>
+            <div class="form-outline mb-4">
+                <input type="password" id="form2" class="form-control" formControlName="senha"
+                    placeholder="Informe sua Senha" />
+                <div *ngIf="senha.invalid && formDir.submitted" class="validation-error">
+                    <p *ngIf="senha.errors?.['required']">O campo Senha é obrigatório.</p>
+
+                </div>
+            </div>
+
+            <!-- Submit button -->
+
+            <div class="btn-1">
+                <a [routerLink]="['/Area-Admnistrativa']"><button type="submit" class="btn"> Entrar </button></a>
+            </div>
+        </div>
+    </form>
+</div>

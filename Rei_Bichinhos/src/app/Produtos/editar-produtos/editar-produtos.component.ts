@@ -48,6 +48,8 @@ export class EditarProdutosComponent implements OnInit {
     id: [0, Validators.required],
     nome: ['', Validators.required],
     quantidade: [0, Validators.required],
+    codigo: ['', Validators.required],
+    modelo: ['', Validators.required],
     descricao: ['', Validators.required],
     valor: [0, Validators.required],
     promocao: [false, Validators.required],
@@ -58,7 +60,6 @@ export class EditarProdutosComponent implements OnInit {
     larguraCm: [0, Validators.required],
     pesoGr: [0, Validators.required],
     id_categoria: [0, Validators.required]
-
 
   });
 
@@ -145,8 +146,12 @@ export class EditarProdutosComponent implements OnInit {
   public get id_categoria() {
     return this.editarProdForm.get('id_categoria')!;
   }
-  // public get categoria() {
-  //   return this.criarProdForm.get('categoria')!;
-  // }
+  public get codigo() {
+    return this.editarProdForm.get('codigo')!;
+  }
+  public get modelo() {
+    return this.editarProdForm.get('modelo')!;
+  }
+
 
 }

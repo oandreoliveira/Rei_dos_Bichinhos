@@ -31,7 +31,24 @@
                 <p *ngIf="quantidade.errors?.['required']">O campo Quantidade é obrigatório.</p>
             </div>
         </div>
-
+        <!-- Código input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Código do Produto</label>
+            <input type="text" id="form2" class="form-control" formControlName="codigo"
+                placeholder="Informar o Código do Produto" />
+            <div *ngIf="codigo.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="codigo.errors?.['required']">O campo Código é obrigatório.</p>
+            </div>
+        </div>
+        <!-- Modelo input -->
+        <div class="form-outline mb-4">
+            <label for="form5Example1" class="form-label">Modelo</label>
+            <input type="text" id="form2" class="form-control" formControlName="modelo"
+                placeholder="Informar o modelo do código" />
+            <div *ngIf="modelo.invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="modelo.errors?.['required']">O campo Modelo é obrigatório.</p>
+            </div>
+        </div>
         <!-- Descricao input -->
         <div class="form-outline mb-4">
             <label for="form5Example1" class="form-label">Descrição</label>

@@ -19,6 +19,7 @@ export class CriarCategoriasComponent implements OnInit {
   criarProdForm = this.fb.group({
 
     nome: ['', Validators.required],
+    isAtivo: [true, Validators.required],
     imagem: ['', Validators.required]
 
 

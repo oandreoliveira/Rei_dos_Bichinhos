@@ -12,6 +12,10 @@ import { DetalharProdutoComponent } from './Produtos/detalhar-produto/detalhar-p
 import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produtos.component';
 import { ListarProdutosHomeComponent } from './Produtos/listar-produtos-home/listar-produtos-home.component';
 import { ListarProdutosComponent } from './Produtos/listar-produtos/listar-produtos.component';
+import { CriarUsuariosComponent } from './Usuarios/criar-usuarios/criar-usuarios.component';
+import { EditarUsuariosComponent } from './Usuarios/editar-usuarios/editar-usuarios.component';
+import { ListarUsuariosComponent } from './Usuarios/listar-usuarios/listar-usuarios.component';
+import { LoginComponent } from './Usuarios/login/login.component';
 
 const routes: Routes = [
 
@@ -27,7 +31,11 @@ const routes: Routes = [
   { path: 'Produtos-Home', component: ListarProdutosHomeComponent },
   { path: 'Produtos-Categoria/:id', component: ListarProdutosCategoriasComponent },
   { path: 'Detalhes-Produto/:id', component: DetalharProdutoComponent },
-  { path: 'Carrinho-Compras/:id', component: CarrinhoComponent }
+  { path: 'Carrinho-Compras/:id', component: CarrinhoComponent },
+  { path: 'Usuarios', component: ListarUsuariosComponent },
+  { path: 'Editar-Usuarios/:id', component: EditarUsuariosComponent },
+  { path: 'Criar-Usuarios', component: CriarUsuariosComponent },
+  { path: 'Login', component: LoginComponent }
 
 
 
