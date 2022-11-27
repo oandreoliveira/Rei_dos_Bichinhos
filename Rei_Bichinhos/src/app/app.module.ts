@@ -32,6 +32,7 @@ import { LoginComponent } from './Usuarios/login/login.component';
 import { EditarUsuariosComponent } from './Usuarios/editar-usuarios/editar-usuarios.component';
 import { ListarUsuariosComponent } from './Usuarios/listar-usuarios/listar-usuarios.component';
 import { SobreNosComponent } from './navegacao/sobre-nos/sobre-nos.component';
+import { ListarProdutosPromoComponent } from './Produtos/listar-produtos-promo/listar-produtos-promo.component';
 
 
 
@@ -56,7 +57,8 @@ import { SobreNosComponent } from './navegacao/sobre-nos/sobre-nos.component';
     LoginComponent,
     EditarUsuariosComponent,
     ListarUsuariosComponent,
-    SobreNosComponent
+    SobreNosComponent,
+    ListarProdutosPromoComponent
 
   ],
   imports: [
