@@ -40,11 +40,13 @@
         <div class="row text-center">
             <div *ngFor="let produto of categoria.produtos! | paginate: { itemsPerPage: 6, currentPage: paginaAtual }; let i = index"
                 class="col-md-4" style="padding-bottom: 30px;">
-                <div class="card h-100">
+                <div class="card h-100" [routerLink]="['/Detalhes-Produto', produto.id]">
 
                     <div style="align-content:center;">
-                        <!-- <img src="{{ produto.imagem }}" height="164px" width="253 px" alt=""> -->
-                        <img class="cardBom" src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
+                        <a [routerLink]="['/Detalhes-Produto', produto.id]">
+                            <img class="cardBom" src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
+                        </a>
+
                     </div>
 
                     <h4 class="card-title">{{produto.nome | titlecase}}</h4>
@@ -71,9 +73,8 @@
                         </div>
                     </div>
 
-
                     <div class="card-footer">
-                        <a class="btn">
+                        <a class="btn" [routerLink]="['/Carrinho-Compras', produto.id]">
                             <span class="fa fa-shopping-cart"></span> Comprar
                         </a>
                     </div>

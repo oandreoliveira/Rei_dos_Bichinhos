@@ -25,12 +25,12 @@
     <div class="container main-container2">
         <div class="teste">
             <div class="h-12">
-                <div class="card h-100">
+                <div class="card h-00">
 
                     <div class="text-center">
                         <!-- <img src="{{ produto.imagem }}" height="164px" width="253 px" alt=""> -->
 
-                        <img class="cardBom " src="{{ produto.imagem }}" height="500px" width="500px" alt="">
+                        <img class="cardBom " src="{{ produto.imagem }}" height="600px" width="600px" alt="">
                     </div>
                     <h4 class="card-title text-center">{{produto.nome | titlecase}}</h4>
                     <div class="row"> <label>Descrição:</label>
@@ -52,12 +52,6 @@
                     </div>
 
 
-
-
-
-
-
-
                     <div class="text-center" [ngSwitch]="produto.promocao ">
                         <p class="promo1" *ngSwitchCase="true">Promoção</p>
                         <p class="promo2" *ngSwitchCase="false">Por Apenas</p>
@@ -76,10 +70,12 @@
                         </div>
                     </div>
                     <div class="card-footer text-center">
-                        <a class="btn">
-                            <span class="fa fa-shopping-cart"></span> Comprar
+                        <a class="btn" [routerLink]="['/Carrinho-Compras', produto.id]">
+                            <span class="fa fa-shopping-cart"></span>
+                            Comprar
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>

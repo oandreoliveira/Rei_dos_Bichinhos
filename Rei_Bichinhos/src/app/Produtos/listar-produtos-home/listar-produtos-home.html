@@ -40,8 +40,8 @@
     <div class="container main-container2">
         <div class="row text-center">
             <div *ngFor="let produto of produtos | paginate: { itemsPerPage: 6, currentPage: paginaAtual }; let i = index"
-                class="col-md-4" style="padding-bottom: 30px;">
-                <div class="card h-100">
+                class="col-md-4" style="padding-bottom: 30px;" [routerLink]="['/Detalhes-Produto', produto.id]">
+                <div class="card h-100" [routerLink]="['/Detalhes-Produto', produto.id]">
 
                     <a class="text-decoration-none" id="detail" [routerLink]="['/Detalhes-Produto', produto.id]">
                         <div style="align-content:center;">
