@@ -32,17 +32,37 @@ th {
 
 }
 
-
-
-.btnCadastro:hover {
-    color: #faf5ee;
+a {
+    color: #ea5b23;
 }
 
 
-.btnCadastro {
+
+.btns1 {
+
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.btns-1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.btn {
     margin: auto;
     height: 45px;
-    width: 120px;
+    width: 220px;
     border-radius: 20px;
     background-color: #ea5b23;
     color: #faf5ee;
@@ -50,14 +70,64 @@ th {
     border-color: transparent;
 }
 
-
-.btn {
-    margin: 8px;
-    font-weight: bold;
-    height: 40px;
+.btn1 {
+    margin: auto;
+    height: 45px;
+    width: 200px;
     border-radius: 20px;
+    background-color: #ea5b23;
+    color: #faf5ee;
+    opacity: 80%;
+    font-weight: bold;
+    border-color: transparent;
 }
 
+.btn2 {
+    background-color: transparent;
+    border-color: #ea5b23;
+    font-weight: bold;
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    color: #ea5b23;
+}
+
+a.btn2 {
+    color: #ea5b23;
+}
+
+.btn2:hover {
+    background-color: #ea5b23;
+    color: #faf5ee;
+    opacity: 80%;
+}
+
+a.btn2:hover {
+    color: #ffffff;
+}
+
+.btn3 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 45px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #ea5b23;
+    color: #faf5ee;
+    opacity: 95%;
+    font-weight: bold;
+    border-color: transparent;
+}
+
+.btns-3 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
 
 .rounded-circle {
 
@@ -76,6 +146,10 @@ th {
     border-color: #1D3557;
 }
 
+h2 {
+    color: #ea5b23;
+}
+
 .btn-criar {
 
     padding-top: 10px;
@@ -86,29 +160,23 @@ th {
 
 }
 
-input::placeholder {
-    color: #457B9D;
-    font-style: italic;
-    font-size: 1rem;
+td.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #faf5ee;
-
 }
 
 .form-control {
     background-color: #faf5ee;
+    width: 40%;
+    align-items: center;
+    text-align: center;
 }
 
 .input-group {
 
-    max-width: 400px;
-    align-items: right;
-
-}
-
-.pagination {
-    display: flex;
-    align-items: right;
-    justify-content: center;
+    max-width: 20px;
+    align-items: center;
 
 }

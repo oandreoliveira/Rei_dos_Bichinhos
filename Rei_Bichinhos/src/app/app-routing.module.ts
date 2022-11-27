@@ -7,6 +7,7 @@ import { ListarProdutosCategoriasComponent } from './Categorias/listar-produtos-
 import { CarrinhoComponent } from './Compras/carrinho/carrinho.component';
 import { AreaAdministrativaComponent } from './navegacao/area-administrativa/area-administrativa.component';
 import { HomeComponent } from './navegacao/home/home.component';
+import { SobreNosComponent } from './navegacao/sobre-nos/sobre-nos.component';
 import { CriarProdutosComponent } from './Produtos/criar-produtos/criar-produtos.component';
 import { DetalharProdutoComponent } from './Produtos/detalhar-produto/detalhar-produto.component';
 import { EditarProdutosComponent } from './Produtos/editar-produtos/editar-produtos.component';
@@ -35,7 +36,8 @@ const routes: Routes = [
   { path: 'Usuarios', component: ListarUsuariosComponent },
   { path: 'Editar-Usuarios/:id', component: EditarUsuariosComponent },
   { path: 'Criar-Usuarios', component: CriarUsuariosComponent },
-  { path: 'Login', component: LoginComponent }
+  { path: 'Login', component: LoginComponent },
+  { path: 'Sobre-Nos', component: SobreNosComponent }
 
 
 

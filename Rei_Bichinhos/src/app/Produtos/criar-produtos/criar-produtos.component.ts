@@ -52,8 +52,8 @@ export class CriarProdutosComponent implements OnInit {
   public promocaoIsTrue(): boolean {
 
     return this.criarProdForm.controls.promocao.value == true;
-
   }
+
   public promocaoIsFalse(): boolean {
 
     return this.criarProdForm.controls.promocao.value == false;

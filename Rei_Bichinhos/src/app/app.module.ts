@@ -31,6 +31,7 @@ import { CriarUsuariosComponent } from './Usuarios/criar-usuarios/criar-usuarios
 import { LoginComponent } from './Usuarios/login/login.component';
 import { EditarUsuariosComponent } from './Usuarios/editar-usuarios/editar-usuarios.component';
 import { ListarUsuariosComponent } from './Usuarios/listar-usuarios/listar-usuarios.component';
+import { SobreNosComponent } from './navegacao/sobre-nos/sobre-nos.component';
 
 
 
@@ -54,7 +55,8 @@ import { ListarUsuariosComponent } from './Usuarios/listar-usuarios/listar-usuar
     CriarUsuariosComponent,
     LoginComponent,
     EditarUsuariosComponent,
-    ListarUsuariosComponent
+    ListarUsuariosComponent,
+    SobreNosComponent
 
   ],
   imports: [

@@ -1,0 +1,44 @@
+<div class="home">
+
+    <div class=" container main-container">
+        <header class="row text-center bg-secondary1 py-6 mb-6 ">
+            <div class="row text-center">
+                <div *ngFor="let categoria of categorias" class="col-md-1">
+                    <div class="cardCat h-50">
+                        <div style="align-content:center;">
+                            <a [routerLink]="['/Produtos-Categoria',categoria.id]">
+                                <img class="cardBom" src="{{categoria.imagem}}" height="100px" width="100 px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container main-container2">
+            <div class="row">
+                <div class="h-12">
+                    <div class="card h-100">
+                        <h5 class="titulo" [routerLink]="['/Home']">Sobre Nós</h5>
+                        <div class="card-body">
+                            <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cumque facilis officiis
+                                pariatur voluptates nisi. Quae consectetur earum magni numquam. Eius beatae vel veniam
+                                inventore iure sit cupiditate quasi saepe.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam porro cupiditate
+                                tempora ab quidem odit, dolores ullam, incidunt adipisci nemo harum. Ducimus praesentium
+                                distinctio aliquam iusto accusamus aut voluptates.
+                            </label>
+                        </div>
+                        <div class="imagem">
+                            <a href="https://www.instagram.com/reidosbichinhos/" target="_blank" class=""> <img
+                                    class="d-block w-100" style=" border-radius: 5px" src="/assets/banner_inferior2.png"
+                                    height="290px">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

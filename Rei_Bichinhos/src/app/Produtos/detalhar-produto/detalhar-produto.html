@@ -23,13 +23,11 @@
         </div> -->
 
     <div class="container main-container2">
-        <div class="teste">
+        <div class="row">
             <div class="h-12">
-                <div class="card h-00">
-
+                <div class="card h-100">
                     <div class="text-center">
                         <!-- <img src="{{ produto.imagem }}" height="164px" width="253 px" alt=""> -->
-
                         <img class="cardBom " src="{{ produto.imagem }}" height="600px" width="600px" alt="">
                     </div>
                     <h4 class="card-title text-center">{{produto.nome | titlecase}}</h4>
@@ -50,8 +48,6 @@
                     <div class="row"> <label>Peso: </label>
                         <p class="texto">{{produto.pesoGr}} gramas</p>
                     </div>
-
-
                     <div class="text-center" [ngSwitch]="produto.promocao ">
                         <p class="promo1" *ngSwitchCase="true">Promoção</p>
                         <p class="promo2" *ngSwitchCase="false">Por Apenas</p>
@@ -75,7 +71,6 @@
                             Comprar
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>

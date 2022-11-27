@@ -18,7 +18,7 @@
                         </th>
                         <th class="shipping-date">Entrega</th>
                         <th class="product-price" data-i18n="global.price">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preço
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preço
                         </th>
                         <th class="quantity" data-i18n="global.quantity">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantidade</th>
@@ -83,104 +83,60 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="quantity cant-change-qty">
+                        <td class="quantity">
                             <div class="form-outline mb-4">
-                                <input type="number" min="0" id="form3" class="form-control" placeholder="0" />
+                                <input type="number" min="1" id="form1" class="form-control" placeholder="1" />
 
                             </div>
                         </td>
-                        <td class="quantity-price">
-                            <div *ngIf="produto.promocao" class="card-body">
-                                <div class="text-center">
-                                    <div class="card-text">{{produto.valorPromo | currency: 'BRL'}}</div>
+                        <td class="quantity-price"><b>
+                                <div *ngIf="produto.promocao" class="card-body">
+                                    <div class="text-center">
+                                        <div class="card-text">{{produto.valorPromo | currency: 'BRL'}}</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div *ngIf="!produto.promocao" class="card-body">
-                                <div class="text-center">
-                                    <div class="card-text">{{produto.valor | currency: 'BRL'}}</div>
+                                <div *ngIf="!produto.promocao" class="card-body">
+                                    <div class="text-center">
+                                        <div class="card-text">{{produto.valor | currency: 'BRL'}}</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </b>
                             <!-- Implantar Posteriormente a remoção de linha -->
                         <td class="item-remove">
                             <div class="text-center">
-                                <p> X </p>
+                                <img src="https://cdn-icons-png.flaticon.com/512/6276/6276642.png" alt=""
+                                    style="width: 30px; height: 30px">
+
                             </div>
-
                         </td>
-
                     </tr>
-
                 </tbody>
             </table>
+
             <div>
                 <div class="cart-more-options span7">
-                    <div class="cart-select-gift-placeholder"></div>
-                    <div id="shipping-preview-container" class="srp-container"
-                        data-bind="css: { 'component-loading component-loading-bg': !window.checkout.renderLoaded(),}">
-                        <div class="srp-content onda-v1">
-                            <h2 class="srp-main-title mt0 mb0 f3 black-60 fw4">Entrega</h2>
-                            <p class="srp-description mw5">Veja as opções de entrega para seus itens, com todos
-                                os prazos e valores.</p>
-                            <div class="srp-data mt4"><button id="shipping-calculate-link"
-                                    class="shp-open-options vbw1 ba fw5 ttu br2 fw4 v-mid relative mt3 pv3 ph5 f6 bg-washed-blue b--washed-blue blue hover-bg-light-blue hover-b--light-blue hover-heavy-blue pointer">Calcular</button>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>Entrega</h2>
+                    <i class="srp-description mw5">Veja as opções de entrega para seus itens, com todos os prazos e
+                        valores.</i>
                 </div> <!-- /ko -->
-                <div class="span5 totalizers summary-totalizers cart-totalizers pull-right">
-                    <div class="forms coupon-column summary-coupon-wrap text-center"
-                        data-bind="visible: checkout.hasShippingPreview()" style="">
-                        <div class="coupon summary-coupon" data-bind="with: coupon, visible: hasTotal" style="">
-                            <form class="coupon-form" action="" data-bind="submit: addCoupon">
-                                <fieldset class="coupon-fieldset">
-                                    <div data-bind="fadeVisible: isUsingCoupon()" style="display: none;">
-                                        <p class="coupon-label"> <label for="cart-coupon"
-                                                data-i18n="totalizers.couponCapitalize">Cupom de
-                                                desconto</label> </p>
-                                        <p class="coupon-fields"> <span data-bind="visible: !isCouponTyped()">
-                                                <input type="text" id="cart-coupon" class="coupon-value input-small"
-                                                    data-bind="value: couponCode, valueUpdate:'afterkeydown', disable: loadingCoupon()"
-                                                    placeholder="Código"
-                                                    data-i18n="[placeholder]totalizers.couponCode;"> <i
-                                                    class="loading-inline icon-spinner icon-spin loading-coupon"
-                                                    data-bind="fadeInlineVisible: loadingCoupon" style="opacity: 0;">
-                                                    <span data-i18n="cart.wait">Por favor,
-                                                        aguarde...</span> </i> <button type="submit"
-                                                    id="cart-coupon-add" class="btn" data-bind="disable: loadingCoupon"
-                                                    data-i18n="global.add">Adicionar</button> </span> <span class="info"
-                                                data-bind="visible: isCouponTyped" style="display: none;"> <span
-                                                    data-bind="text: value"></span>
-                                                <small class="delete"><a href="javascript:void(0);"
-                                                        id="cart-coupon-remove" data-bind="click: removeCoupon"
-                                                        data-i18n="global.delete">excluir</a></small> </span>
-                                        </p>
-                                    </div>
-                                    <p class="coupon-data" data-bind="fadeVisible: !isUsingCoupon()"> <a
-                                            class="link-coupon-add" href="javascript:void(0);" id="cart-link-coupon-add"
-                                            data-bind="click: isUsingCoupon"> <span data-i18n="global.add">Adicionar
-                                                cupom de desconto</span> </a> </p>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
 
-
-                    <div class="clearfix pull-right cart-links cart-links-bottom hide" style="display: flex;">
-                        <span class="link-choose-more-products-wrapper">
-                            <a data-bind="attr: {href: (window.__RUNTIME__ &amp;&amp; window.__RUNTIME__.rootPath ? (window.__RUNTIME__.rootPath + (window.__RUNTIME__.workspace != 'master' ? ('?workspace=' + window.__RUNTIME__.workspace) : '')) : '/') }"
-                                id="cart-choose-more-products" class="more link-choose-more-products"
-                                data-i18n="cart.chooseMoreProducts" href="/">Escolher mais produtos</a>
-                        </span>
-                        <span class="btn-place-order-wrapper">
-                            <a href="#/orderform" target="_self" data-event="cartToOrderform" id="cart-to-orderform"
-                                class="btn btn-large btn-success pull-left-margin btn-place-order"
-                                data-i18n="cart.finalize" data-bind="click: cart.next">Fechar pedido</a>
-                        </span>
+                <div class="btns-1">
+                    <div>
+                        <button class="btn1">Calcular o Frete</button>
                     </div>
-                    <div class="extensions-checkout-buttons-container row-fluid" style="display: block;">
-                        <div class="extensions-checkout-buttons span5 pull-right" style="display: none;">
-                            <div class="render-container" id="render-checkout-buttons"></div>
-                        </div>
+                    <div>
+                        <button class="btn2">Adicionar
+                            cupom de desconto </button>
                     </div>
                 </div>
-                <!-- /END CART -->
+                <div class="btns-1">
+                    <div>
+                        <button class="btn1" [routerLink]="['/Produtos-Home']">Escolher
+                            mais produtos</button>
+                    </div>
+                </div>
+                <div class="btns-3">
+                    <div>
+                        <button class="btn3" [routerLink]="['/Home']">Fechar pedido</button>
+                    </div>
+                </div>
