@@ -36,40 +36,38 @@
     </div>
     <div class="container main-container2">
         <div class="row text-center">
-            <div *ngFor="let produto of produtos | paginate: { itemsPerPage: 6, currentPage: paginaAtual }; let i = index"
+            <div *ngFor="let produto of ProdutosPromo() | paginate: { itemsPerPage: 6, currentPage: paginaAtual }; let i = index"
                 class="col-md-4" style="padding-bottom: 30px;" [routerLink]="['/Detalhes-Produto', produto.id]">
-                <ng-container *ngIf="produto.promocao == true">
-                    <div class="card h-100" [routerLink]="['/Detalhes-Produto', produto.id]">
-                        <a class="text-decoration-none" id="detail" [routerLink]="['/Detalhes-Produto', produto.id]">
-                            <div style="align-content:center;">
-                                <img class="cardBom" src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
-                            </div>
-                        </a>
-                        <h4 class="card-title">{{produto.nome | titlecase}}</h4>
-                        <div [ngSwitch]="produto.promocao">
-                            <p *ngSwitchCase="true">Promoção</p>
-                            <p *ngSwitchCase="false">Por Apenas</p>
+                <div class="card h-100" [routerLink]="['/Detalhes-Produto', produto.id]">
+                    <a class="text-decoration-none" id="detail" [routerLink]="['/Detalhes-Produto', produto.id]">
+                        <div style="align-content:center;">
+                            <img class="cardBom" src="{{ produto.imagem }}" height="250px" width="250 px" alt="">
                         </div>
-                        <div *ngIf="produto.promocao" class="card-body">
-                            <div>
-                                <h4 class="card-text"> De:
-                                    <small><del>{{produto.valor | currency: 'BRL'}}</del></small>
-                                    Por: {{produto.valorPromo | currency: 'BRL'}}
-                                </h4>
-                            </div>
-                        </div>
-                        <div *ngIf="!produto.promocao" class="card-body">
-                            <div>
-                                <h4>{{produto.valor | currency: 'BRL'}}</h4>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn" [routerLink]="['/Carrinho-Compras', produto.id]">
-                                <span class="fa fa-shopping-cart"></span> Comprar
-                            </a>
+                    </a>
+                    <h4 class="card-title">{{produto.nome | titlecase}}</h4>
+                    <div [ngSwitch]="produto.promocao">
+                        <p *ngSwitchCase="true">Promoção</p>
+                        <p *ngSwitchCase="false">Por Apenas</p>
+                    </div>
+                    <div *ngIf="produto.promocao" class="card-body">
+                        <div>
+                            <h4 class="card-text"> De:
+                                <small><del>{{produto.valor | currency: 'BRL'}}</del></small>
+                                Por: {{produto.valorPromo | currency: 'BRL'}}
+                            </h4>
                         </div>
                     </div>
-                </ng-container>
+                    <div *ngIf="!produto.promocao" class="card-body">
+                        <div>
+                            <h4>{{produto.valor | currency: 'BRL'}}</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn" [routerLink]="['/Carrinho-Compras', produto.id]">
+                            <span class="fa fa-shopping-cart"></span> Comprar
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="pagination fixed-botton">

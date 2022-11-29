@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -44,10 +45,20 @@ export class CriarProdutosComponent implements OnInit {
     alturaCm: [new FormControl(), Validators.required],
     larguraCm: [new FormControl(), Validators.required],
     pesoGr: [new FormControl(), Validators.required],
-    id_categoria: [new FormControl(), Validators.required]
+    id_categoria: [0, Validators.required]
 
 
   });
+
+  categoriaIdProv!: number
+  public GetId(): number {
+    return +this.categoriaIdProv
+  }
+
+  // public GetId2() {
+  //   return this.criarProdForm.controls.id_categoria.value == this.GetId();
+  // }
+
 
   public promocaoIsTrue(): boolean {
 
@@ -70,13 +81,16 @@ export class CriarProdutosComponent implements OnInit {
 
   public Produto: Produto = {} as Produto;
   public "produtos": Produto[];
+
   criarProduto() {
     if (this.criarProdForm.invalid) {
       return
     }
     this.Produto = { ... this.criarProdForm.value } as Produto;
+    this.Produto.id_categoria == +this.id_categoria
     this.produtosService.postProduto(this.Produto).subscribe(
       () => {
+        console.log(this.Produto.id_categoria)
         this.showSuccess();
         this.router.navigate(['/Produtos']);
       },

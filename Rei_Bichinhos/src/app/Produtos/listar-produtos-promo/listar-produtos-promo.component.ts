@@ -25,11 +25,6 @@ export class ListarProdutosPromoComponent implements OnInit {
     });
   }
 
-  IsPromo: boolean = true;
-
-  public ProdutosPromo() {
-    return this.IsPromo = this.produto.promocao == true;
-  }
 
 
   public "produtos": Produto[];
@@ -37,6 +32,10 @@ export class ListarProdutosPromoComponent implements OnInit {
   public categoria: Categoria = {} as Categoria;
   public produto: Produto = {} as Produto;
 
+
+  public ProdutosPromo() {
+    return this.produtos.filter(prom => prom.promocao == true)
+  }
 
 
 
@@ -108,6 +107,7 @@ export class ListarProdutosPromoComponent implements OnInit {
     this.getCategorias();
     this.getCategoriaId();
     this.getProdutoId();
+
   }
 
 }
