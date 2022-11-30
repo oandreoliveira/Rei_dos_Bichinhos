@@ -32,7 +32,7 @@ export class CriarProdutosComponent implements OnInit {
   }
   criarProdForm = this.fb.group({
 
-    nome: ['', Validators.required],
+    nome: ['', Validators.required, Validators.maxLength(30), Validators.minLength(2)],
     quantidade: [new FormControl(), Validators.required],
     codigo: ['', Validators.required],
     modelo: ['', Validators.required],
@@ -82,12 +82,14 @@ export class CriarProdutosComponent implements OnInit {
   public Produto: Produto = {} as Produto;
   public "produtos": Produto[];
 
+
+
   criarProduto() {
     if (this.criarProdForm.invalid) {
       return
     }
+    this.criarProdForm.controls.id_categoria.setValue(+this.criarProdForm.controls.id_categoria.value!)
     this.Produto = { ... this.criarProdForm.value } as Produto;
-    this.Produto.id_categoria == +this.id_categoria
     this.produtosService.postProduto(this.Produto).subscribe(
       () => {
         console.log(this.Produto.id_categoria)

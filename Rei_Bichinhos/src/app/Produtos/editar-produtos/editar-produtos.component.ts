@@ -84,10 +84,8 @@ export class EditarProdutosComponent implements OnInit {
     if (this.editarProdForm.invalid) {
       return
     }
-
-    // this.produto = {} as Produto
+    this.editarProdForm.controls.id_categoria.setValue(+this.editarProdForm.controls.id_categoria.value!)
     this.produto = { ... this.editarProdForm.value } as Produto
-
     this.produtosService.putProduto(this.produto.id, this.produto).subscribe(
       produto => {
         this.showSuccess();

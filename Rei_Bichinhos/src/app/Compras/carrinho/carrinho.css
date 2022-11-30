@@ -55,6 +55,7 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: #faf5ee;
 
 }
 
@@ -107,8 +108,7 @@ a.btn2:hover {
 }
 
 .btn3 {
-    display: flex;
-    justify-content: center;
+
     margin: auto;
     height: 45px;
     width: 500px;
@@ -150,15 +150,6 @@ h2 {
     color: #ea5b23;
 }
 
-.btn-criar {
-
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-
-}
 
 td.quantity {
     display: flex;
