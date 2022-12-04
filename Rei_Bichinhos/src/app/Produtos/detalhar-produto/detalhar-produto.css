@@ -136,7 +136,7 @@ label {
 
 h4 {
     color: #ea5b23;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: inherit;
     font-size: 50px;
 
@@ -165,13 +165,6 @@ h3 {
 
 }
 
-/* .imagem {
-    padding-top: 2%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 2%;
-
-} */
 
 .card-img-top {
     border-radius: 10px 10px 10px 10px;
@@ -181,4 +174,15 @@ h3 {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+}
+
+.categoriaRound {
+    width: fit-content;
+    padding: 10%;
+}
+
+.textoCat {
+    color: #ea5b23;
+    font-size: 15px;
+    text-decoration: none;
 }

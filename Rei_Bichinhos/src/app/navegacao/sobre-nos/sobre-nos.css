@@ -34,14 +34,17 @@ h5 {
     display: flex;
     justify-content: center;
     color: #ea5b23;
-    /* font-weight: bold; */
     font-family: inherit;
     font-size: 50px;
 
 }
 
 
-
 .card-img-top {
     border-radius: 10px 10px 10px 10px;
+}
+
+.categoriaRound {
+    width: fit-content;
+    padding: 10%;
 }

@@ -128,5 +128,10 @@ a.btn:hover {
 
 .cardBom {
     width: fit-content;
-    padding: 9%;
+    padding: 5%;
+}
+
+.categoriaRound {
+    width: fit-content;
+    padding: 10%;
 }
