@@ -108,6 +108,7 @@ export class ListarProdutosPromoComponent implements OnInit {
     this.getCategoriaId();
     this.getProdutoId();
 
+
   }
 
 }

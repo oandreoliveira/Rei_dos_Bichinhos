@@ -570,6 +570,23 @@
           "id_categoria": 1
         },
         {
+          "id": 1,
+          "nome": "Ursinho",
+          "quantidade": 100,
+          "codigo": "2958",
+          "modelo": "F0",
+          "descricao": "Caixa com 2 unidades",
+          "valor": 270,
+          "promocao": false,
+          "valorPromo": 15,
+          "imagem": "https://media.discordapp.net/attachments/958521718794768426/1041040947632406538/Captura_de_tela_2022-11-06_223240.png?width=561&height=630",
+          "isAtivo": true,
+          "alturaCm": 90,
+          "larguraCm": 60,
+          "pesoGr": 300,
+          "id_categoria": 1
+        },
+        {
           "id": 21,
           "nome": "Urso Panda",
           "quantidade": 100,
