@@ -14,20 +14,11 @@
 
 
 
-.texto {
+label {
     color: #1D3557;
     font-size: 1.1rem;
     font-family: inherit;
     padding-left: 20px;
-
-}
-
-*/ label {
-    color: #ea5b23;
-    font-weight: bold;
-    font-family: inherit;
-    padding-left: 30px;
-    font-size: 15px;
 }
 
 h5 {
