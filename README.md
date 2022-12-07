@@ -11,8 +11,8 @@ Desenvolvemos um MVP de um site em Angular com Backand Mockado
 Faça o clone do projeto:
 https://github.com/oandreoliveira/Rei_dos_Bichinhos.git
 
+### É preciso ter o NodeJs instalado
 - Na pasta REI_BICHINHOS abra o pimeiro terminal e execute os comandos:
-É preciso ter o NodeJs instalado
 
 Para instalar os pacotes:
 ```tsx
