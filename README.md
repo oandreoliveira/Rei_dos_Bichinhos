@@ -15,6 +15,10 @@ https://github.com/oandreoliveira/Rei_dos_Bichinhos.git
 - Na pasta REI_BICHINHOS abra o pimeiro terminal e execute os comandos:
 
 Para instalar os pacotes:
+
+```tsx
+npm install 
+```
 ```tsx
 npm install -g @angular/cli
 ```
