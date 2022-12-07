@@ -12,6 +12,7 @@ Faça o clone do projeto:
 https://github.com/oandreoliveira/Rei_dos_Bichinhos.git
 
 - Na pasta REI_BICHINHOS abra o pimeiro terminal e execute os comandos:
+É preciso ter o NodeJs instalado
 
 Para instalar os pacotes:
 ```tsx
@@ -22,7 +23,7 @@ npm install json-server -g
 ```
 Para rodar o Backand Mockado no projeto
 ```tsx
-npm install json-server -g
+json-server --watch backend.json
 ```
 - Abra o segundo terminal e execute o comando:
 
